@@ -26,6 +26,7 @@ const navItems = [
 
 export function SiteHeader() {
   const [isVisible, setIsVisible] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -115,7 +116,7 @@ export function SiteHeader() {
 
         {/* Mobile Toggle */}
         <div className="lg:hidden">
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger
               render={
                 <Button
@@ -139,6 +140,7 @@ export function SiteHeader() {
                   <Link
                     key={item.label}
                     href={item.href}
+                    onClick={() => setIsOpen(false)}
                     className="px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-black hover:bg-black/5 rounded-lg transition-colors font-montserrat"
                   >
                     {item.label}
@@ -159,6 +161,7 @@ export function SiteHeader() {
                 </div>
                 <Link
                   href="/enroll"
+                  onClick={() => setIsOpen(false)}
                   className="mt-2 inline-flex items-center justify-center rounded-full bg-[#C5A059] py-4 text-xs font-bold uppercase tracking-widest text-[#1A1A1A] font-montserrat"
                 >
                   Enroll Now
