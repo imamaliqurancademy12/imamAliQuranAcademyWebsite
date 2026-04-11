@@ -21,7 +21,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "YouTube",
-    href: "https://www.youtube.com/@imamalionlinequranacedmy",
+    href: "https://youtube.com/@imamaliquranacademy?si=cftdAykJiKGQ0tNB",
     icon: (props: any) => (
       <svg {...props} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path fillRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C22 8.688 22 12 22 12s0 3.312-.42 4.814a2.504 2.504 0 01-1.768 1.768c-1.502.42-7.812.42-7.812.42s-6.31 0-7.812-.42a2.504 2.504 0 01-1.768-1.768C2 15.312 2 12 2 12s0-3.312.42-4.814a2.504 2.504 0 011.768-1.768c1.502-.42 7.812-.42 7.812-.42s6.31 0 7.812.42zm-12.105 3.32v6.524l5.643-3.262-5.643-3.262z" clipRule="evenodd" />

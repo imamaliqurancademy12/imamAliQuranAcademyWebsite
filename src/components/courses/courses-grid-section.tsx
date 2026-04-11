@@ -7,6 +7,7 @@ type Course = {
   level: string;
   description: string;
   rating: number;
+  image: string;
 };
 
 const courses: Course[] = [
@@ -16,6 +17,7 @@ const courses: Course[] = [
     level: "Advanced",
     description: "Perfect the pronunciation of the Holy Quran through deep phonetics and traditional recitation methods.",
     rating: 5,
+    image: "/images/courses/tajweed.webp",
   },
   {
     title: "Quranic Translation",
@@ -23,6 +25,7 @@ const courses: Course[] = [
     level: "Intermediate",
     description: "Uncover the profound meanings behind the sacred text through morphological analysis and context.",
     rating: 4,
+    image: "/images/courses/translation.webp",
   },
   {
     title: "Islamic History",
@@ -30,6 +33,7 @@ const courses: Course[] = [
     level: "Foundation",
     description: "Journey through the golden ages of Islamic civilization, exploring philosophy, art, and leadership.",
     rating: 5,
+    image: "/images/courses/history.webp",
   },
   {
     title: "Tafseer Studies",
@@ -37,6 +41,7 @@ const courses: Course[] = [
     level: "Advanced",
     description: "An in-depth exploration of the classical commentaries of the Quran, studying historical contexts.",
     rating: 4,
+    image: "/images/courses/tfseer.webp",
   },
   {
     title: "Qaida With Tajweed",
@@ -44,6 +49,7 @@ const courses: Course[] = [
     level: "Beginner",
     description: "Master Arabic phonetics and letter recognition to build a strong foundation.",
     rating: 5,
+    image: "/images/courses/Qaida With Tajweed.jpg",
   },
   {
     title: "Basic Quran Reading",
@@ -51,6 +57,7 @@ const courses: Course[] = [
     level: "Beginner",
     description: "Develop fluency in reading the Holy Quran with correct pronunciation.",
     rating: 5,
+    image: "/images/courses/Basic Quran Reading.jpg",
   },
   {
     title: "Quran Memorization",
@@ -58,6 +65,7 @@ const courses: Course[] = [
     level: "Advanced",
     description: "A structured program for systematic Hifz with revision techniques.",
     rating: 5,
+    image: "/images/courses/Quran Memorization.webp",
   },
   {
     title: "Islamic Fiqah",
@@ -65,6 +73,7 @@ const courses: Course[] = [
     level: "Intermediate",
     description: "Understand the practical rulings of Islamic law regarding worship and daily life.",
     rating: 4,
+    image: "/images/courses/Islamic Fiqah.jpeg",
   },
   {
     title: "Saheefa Sajjadia",
@@ -72,6 +81,7 @@ const courses: Course[] = [
     level: "Intermediate",
     description: "Explore the beautiful supplications and spiritual teachings of Imam Sajjad (as).",
     rating: 5,
+    image: "/images/courses/Saheefa Sajjadia.png",
   },
   {
     title: "Nehjul Balagha",
@@ -79,6 +89,7 @@ const courses: Course[] = [
     level: "Advanced",
     description: "Deep dive into the sermons, letters, and wisdom of Imam Ali (as).",
     rating: 5,
+    image: "/images/courses/Nehjul Balagha.webp",
   },
   {
     title: "Dua & Adhkar",
@@ -86,6 +97,7 @@ const courses: Course[] = [
     level: "Beginner",
     description: "Learn essential daily prayers and morning/evening remembrances.",
     rating: 5,
+    image: "/images/courses/Dua & Adhkar.png",
   },
   {
     title: "Arabic Language",
@@ -93,11 +105,12 @@ const courses: Course[] = [
     level: "Intermediate",
     description: "Understand the grammar and vocabulary needed to comprehend the Quran.",
     rating: 4,
+    image: "/images/courses/Arabic Language.jpg",
   },
 ];
 
 function CourseCard({ course }: { course: Course }) {
-  const imageSrc = `/courses/${encodeURIComponent(course.title)}.jpg`;
+  const imageSrc = course.image;
 
   return (
     <div className="flex h-full flex-col overflow-hidden rounded-xl border border-[#775a22]/20 bg-[#fdfae9] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
