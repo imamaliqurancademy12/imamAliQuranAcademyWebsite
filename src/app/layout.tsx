@@ -32,8 +32,10 @@ export const metadata: Metadata = {
     default: "Imam Ali Quran Academy | Online Quran Courses with Expert Scholars",
     template: "%s | Imam Ali Quran Academy",
   },
+
   description:
     "Learn Quran online with certified Islamic scholars. Tajweed, Tafseer, Islamic History and more. Flexible live classes for all ages and levels.",
+
   keywords: [
     "Quran academy",
     "online Quran classes",
@@ -43,6 +45,12 @@ export const metadata: Metadata = {
     "learn Quran online",
     "Imam Ali Academy",
   ],
+
+  // ✅ CANONICAL (CORRECT PLACE)
+  alternates: {
+    canonical: "https://imamaliquranacademy.com",
+  },
+
   openGraph: {
     title: "Imam Ali Quran Academy — Sacred Knowledge Online",
     description:
@@ -60,6 +68,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Imam Ali Quran Academy — Learn Quran Online",
@@ -67,7 +76,11 @@ export const metadata: Metadata = {
       "Expert Islamic education at your pace. Tajweed, Tafseer, Islamic History and more.",
     images: ["/images/home/hero.webp"],
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -82,9 +95,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <SiteHeader />
+
         <main className="flex-1 flex flex-col">
           {children}
         </main>
+
         <SiteFooter />
         <WhatsAppButton />
         <Toaster richColors position="top-right" />
