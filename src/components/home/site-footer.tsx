@@ -17,7 +17,7 @@ const navLinks = [
 
 const contactInfo = {
   address: "Model Town",
-  phone: "03211194725",
+  phone: "+92 321 1194725",
   email: "imamaliquranacademy@gmail.com",
 };
 
