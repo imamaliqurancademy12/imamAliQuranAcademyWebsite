@@ -26,7 +26,7 @@ export function ContactContent() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0B2C3D]">Email Us</h4>
-                  <p className="text-[#5F7A8A]">admissions@imamaliacademy.com</p>
+                  <p className="text-[#5F7A8A]">imamaliquranacademy@gmail.com</p>
                 </div>
               </div>
 
