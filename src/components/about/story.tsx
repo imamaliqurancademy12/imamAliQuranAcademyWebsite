@@ -6,16 +6,18 @@ export function StorySection() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 md:gap-20 md:px-8 lg:grid-cols-2">
         <div>
           <h2 className="mb-6 font-['Noto_Serif'] text-3xl font-bold text-[#00334D] md:mb-8 md:text-4xl">
-            The Journey of <br />
+            Our Story <br />
             <i className="font-normal text-[#775a22]">Imam Ali Online Quran Academy</i>
           </h2>
           <p className="mb-0 text-base leading-relaxed text-[#00334D]/70 md:mb-0 md:text-lg">
-            Founded on the principles of sacred knowledge and modern accessibility, Imam Ali Online Quran Academy emerged from a vision to bridge the gap between ancient traditions and the digital age. We believe that distance should never be a barrier to divine understanding.
+            Imam Ali Online Quran Academy started with a simple goal: make Quran
+            learning easy for people at home. We believe distance should not stop
+            anyone from learning the Quran.
           </p>
 
-          <div className="mt-15 sm:mt-20 md:mt-30 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 md:mt-20 md:grid-cols-2">
   {/* First card: full width */}
-  <div className="md:col-span-2 rounded-lg border border-[#4b3a7a] bg-[#2f2357] p-4 sm:p-6 shadow-md">
+  <div className="md:col-span-2 rounded-lg border border-[#4b3a7a] bg-[#2f2357] p-4 shadow-md sm:p-6">
     <div className="flex items-start gap-4">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#4a3a85] text-[#e6deff] shadow-sm">
         {/* Icon */}
@@ -24,16 +26,17 @@ export function StorySection() {
         </svg>
       </div>
       <div>
-        <h3 className="mb-2 text-lg font-bold text-[#f2ecff]">Traditional meets Modern</h3>
+        <h3 className="mb-2 text-lg font-bold text-[#f2ecff]">Simple online learning</h3>
         <p className="text-sm text-[#ddd2ff]/90">
-          Our curriculum preserves the rigorous standards of classical Ijazah while utilizing state-of-the-art virtual classrooms. We teach not just the recitation, but the profound wisdom hidden within the verses.
+          We use live online classes and simple lessons so students can learn with
+          ease and stay connected to Quran learning.
         </p>
       </div>
     </div>
   </div>
 
   {/* Second card: dark blue */}
-  <div className="rounded-lg border border-[#1f5c50] bg-[#0f4a3d] p-4 sm:p-6 shadow-md text-[#a8f2dc]">
+  <div className="rounded-lg border border-[#1f5c50] bg-[#0f4a3d] p-4 text-[#a8f2dc] shadow-md sm:p-6">
     <div className="flex items-start gap-4">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1f6a5a] shadow-sm">
         {/* Icon */}
@@ -42,16 +45,16 @@ export function StorySection() {
         </svg>
       </div>
       <div>
-        <h3 className="mb-2 text-lg font-bold text-[#d9fff1]">Core Philosophy</h3>
+        <h3 className="mb-2 text-lg font-bold text-[#d9fff1]">How we teach</h3>
         <p className="text-sm text-[#cbf7e8]/90">
-          Excellence (Ihsan) in every interaction. We strive to provide a learning experience that reflects the beauty of the Quran itself.
+          We keep lessons calm, clear, and easy to follow.
         </p>
       </div>
     </div>
   </div>
 
   {/* Third card: light beige */}
-  <div className="rounded-lg border border-[#d39a3b] bg-[#fff0d6] p-4 sm:p-6 shadow-md text-[#6a3e00]">
+  <div className="rounded-lg border border-[#d39a3b] bg-[#fff0d6] p-4 text-[#6a3e00] shadow-md sm:p-6">
     <div className="flex items-start gap-4">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ffe2b8] shadow-sm">
         {/* Icon */}
@@ -60,31 +63,36 @@ export function StorySection() {
         </svg>
       </div>
       <div>
-        <h3 className="mb-2 text-lg font-bold text-[#7a4700]">Global Reach</h3>
+        <h3 className="mb-2 text-lg font-bold text-[#7a4700]">Students from many places</h3>
         <p className="text-sm text-[#855425]/90">
-          From the heart of historic centers to the furthest reaches of the globe, we connect students to world-class scholars.
+          People from different countries can join our Quran classes online.
         </p>
       </div>
     </div>
   </div>
 </div>
+
+          <p className="mt-6 text-sm leading-relaxed text-[#00334D]/65 md:text-base">
+            Female Quran teacher support is available for sisters and children who
+            feel more comfortable learning with a female tutor.
+          </p>
         </div>
 
         <div className="relative pb-4 md:translate-x-10 md:pb-24 lg:translate-x-16">
-          <div className="relative z-10 ml-auto w-full max-w-[280px] sm:max-w-[320px] rotate-2 overflow-hidden rounded-lg border-8 border-[#fdfae9] shadow-2xl transition-transform duration-500 hover:rotate-0 md:w-[420px] md:max-w-none">
+          <div className="relative z-10 ml-auto w-full max-w-[320px] overflow-hidden rounded-lg border-8 border-[#fdfae9] shadow-2xl transition-transform duration-500 md:max-w-none md:w-[420px] md:rotate-2 md:hover:rotate-0">
             <Image
               src="/images/about/img.webp"
               alt="Student studying"
               width={420}
               height={240}
-              className="h-[180px] w-full object-cover md:h-[240px] md:w-[420px]"
+              className="h-auto w-full object-cover"
             />
           </div>
           <div className="z-20 mt-6 max-w-sm border-l-4 border-[#C4A061] bg-[#fdfae9] p-5 sm:p-8 shadow-xl md:absolute md:-bottom-10 md:-left-10 md:mt-0">
             <p className="mb-4 font-['Noto_Serif'] text-lg italic  text-secondary">
-              &ldquo;The ink of the scholar is more sacred than the blood of the martyr.&rdquo;
+              &ldquo;Learning the Quran is a path of light for every home.&rdquo;
             </p>
-            <span className="text-[10px] font-bold tracking-widest text-[#775a22] uppercase">— Classical Wisdom</span>
+            <span className="text-[10px] font-bold tracking-widest text-[#775a22] uppercase">— Our Belief</span>
           </div>
         </div>
       </div>

@@ -4,23 +4,23 @@ import { GraduationCap, ShieldCheck, Globe, Star } from "lucide-react";
 const features = [
   {
     icon: GraduationCap,
-    title: "Qualified Scholars",
-    description: "Learn from instructors with decades of mastery in traditional sacred knowledge.",
+    title: "Qualified Teachers",
+    description: "Learn from teachers who know Quran teaching well.",
   },
   {
     icon: ShieldCheck,
-    title: "Certified Excellence",
-    description: "Every curriculum is vetted for academic rigor and traditional authenticity.",
+    title: "Clear Lessons",
+    description: "Our lessons are simple and easy to follow.",
   },
   {
     icon: Globe,
-    title: "Global Community",
-    description: "Join an inclusive sanctuary for students seeking spiritual enlightenment.",
+    title: "Online Anywhere",
+    description: "Join classes from home, no matter where you live.",
   },
   {
     icon: Star,
-    title: "Sacred Integrity",
-    description: "A commitment to the highest standards of Islamic ethical and scholarly conduct.",
+    title: "Trusted Support",
+    description: "We guide students with care and respect.",
   },
 ];
 

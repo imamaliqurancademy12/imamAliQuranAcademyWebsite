@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const feeSections = [
   {
-    heading: "Weekday Classes (Monday - Friday)",
+    heading: "Weekday Classes (Monday to Friday)",
     plans: [
       {
         title: "1 Day / Week",
@@ -78,7 +78,7 @@ const feeSections = [
     ],
   },
   {
-    heading: "Weekend Special (Saturday & Sunday)",
+    heading: "Weekend Classes (Saturday and Sunday)",
     plans: [
       {
         title: "Saturday Only",
@@ -137,7 +137,8 @@ export function PricingGrid() {
                 {section.heading}
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5F7A8A]">
-                Choose the schedule that fits your week with clear pricing and plan highlights.
+                Pick the plan that fits your week. All prices are clear and easy
+                to compare.
               </p>
             </div>
 
@@ -149,14 +150,14 @@ export function PricingGrid() {
               {section.plans.map((plan, index) => (
                 <article
                   key={index}
-                  className="flex h-full min-h-[30rem] flex-col overflow-hidden rounded-[2rem] border-2 border-[#B8965A] bg-white/95 shadow-[0_18px_40px_rgba(11,44,61,0.08)] transition-transform duration-300 hover:-translate-y-2"
+                  className="flex h-full min-h-120 flex-col overflow-hidden rounded-[2rem] border-2 border-[#B8965A] bg-white/95 shadow-[0_18px_40px_rgba(11,44,61,0.08)] transition-transform duration-300 hover:-translate-y-2"
                 >
                   <div className="flex h-14 items-center justify-center rounded-t-[1.5rem] bg-[#f3ead8] text-center text-[#0B2C3D] font-semibold text-xl sm:text-2xl">
                     <h3 className="whitespace-nowrap px-4">
                       {plan.title}
                     </h3>
                   </div>
-                  <div className="flex flex-col flex-grow gap-6 p-8 pb-10">
+                  <div className="flex grow flex-col gap-6 p-8 pb-10">
                     <div>
                       <p className="mt-6 text-sm font-semibold uppercase tracking-[0.24em] text-[#0B2C3D]/80">
                         {plan.subtitle}
@@ -177,7 +178,7 @@ export function PricingGrid() {
                         {plan.currencyBubbles.map((currency, currencyIndex) => (
                           <span
                             key={currencyIndex}
-                            className="inline-flex min-w-[90px] items-center justify-center rounded-full border border-[#E9E3D4] bg-[#F7F3EB] px-3 py-2 text-[11px] font-semibold text-[#0B2C3D]"
+                            className="inline-flex min-w-22.5 items-center justify-center rounded-full border border-[#E9E3D4] bg-[#F7F3EB] px-3 py-2 text-[11px] font-semibold text-[#0B2C3D]"
                           >
                             {currency.label}: {currency.value}
                           </span>

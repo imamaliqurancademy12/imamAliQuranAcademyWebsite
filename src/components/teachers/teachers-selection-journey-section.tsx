@@ -7,27 +7,27 @@ type JourneyStep = {
 const journeySteps: JourneyStep[] = [
   {
     step: "01",
-    title: "Qualification Verification",
+    title: "Check Qualifications",
     description:
-      "Deep dive into academic credentials and direct chains of authorization from senior scholars.",
+      "We check each teacher's Quran education and certificates.",
   },
   {
     step: "02",
-    title: "Teaching Evaluation",
+    title: "Demo Class Review",
     description:
-      "Live demonstration sessions monitored by our pedagogical board to assess clarity and empathy.",
+      "We watch demo classes to confirm clear teaching style.",
   },
   {
     step: "03",
-    title: "Background and Character Check",
+    title: "Character Review",
     description:
-      "Comprehensive review of communal standing and alignment with our spiritual ethics (Adab).",
+      "We make sure teachers are respectful and responsible.",
   },
   {
     step: "04",
-    title: "Ongoing Performance Review",
+    title: "Ongoing Improvement",
     description:
-      "Continuous professional development and termly audits based on student outcomes.",
+      "We keep reviewing lessons and student feedback.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function TeachersSelectionJourneySection() {
     <section className="relative overflow-hidden py-20 md:py-24" style={{ backgroundColor: "var(--background)" }}>
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="mb-16 text-center md:mb-20">
-          <h2 className="mb-4 font-heading text-3xl font-bold text-primary md:text-4xl">Our Selection Journey</h2>
+          <h2 className="mb-4 font-heading text-3xl font-bold text-primary md:text-4xl">How We Select Teachers</h2>
           <div
             className="mx-auto h-1 w-24 rounded-full"
             style={{ backgroundColor: "color-mix(in srgb, var(--secondary) 92%, transparent)" }}

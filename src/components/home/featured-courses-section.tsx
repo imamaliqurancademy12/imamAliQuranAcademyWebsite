@@ -2,8 +2,6 @@ import { ArrowRight, BookOpenText, Languages, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-
 const stars = [1, 2, 3, 4, 5];
 
 export function FeaturedCoursesSection() {
@@ -12,15 +10,15 @@ export function FeaturedCoursesSection() {
 			<div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between">
 				<div>
 					<p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-						Curriculum
+						Online Quran Classes
 					</p>
 					<h2 className="text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
-						Featured Courses
+						Learn Quran Online, Step by Step
 					</h2>
 				</div>
 				<p className="max-w-md text-sm leading-relaxed text-foreground/75 md:text-base">
-					Explore curated pathways designed for both beginners and advanced
-					seekers of Quranic knowledge.
+					Start with beginner classes, then move to Tajweed and Hifz at your own
+					pace.
 				</p>
 			</div>
 
@@ -29,11 +27,10 @@ export function FeaturedCoursesSection() {
 					<div className="relative z-10 max-w-md">
 						<BookOpenText className="mb-5 h-10 w-10 text-secondary" />
 						<h3 className="mb-3 text-2xl font-semibold text-primary md:text-3xl">
-							Tajweed Mastery
+							Learn Quran Reading
 						</h3>
 						<p className="mb-7 text-sm leading-relaxed text-foreground/75 md:text-base">
-							Master articulation, rhythm, and spiritual depth for beautiful,
-							precise recitation.
+							Learn to read Quran with simple, live lessons.
 						</p>
 						<div className="flex items-center gap-3">
 							<div className="flex items-center gap-1 text-secondary">
@@ -42,7 +39,7 @@ export function FeaturedCoursesSection() {
 								))}
 							</div>
 							<span className="text-xs font-semibold uppercase tracking-[0.16em] text-secondary">
-								Gold Level
+								Start Here
 							</span>
 						</div>
 					</div>
@@ -52,10 +49,10 @@ export function FeaturedCoursesSection() {
 				<article className="rounded-xl border border-secondary/15 bg-accent/20 p-5 sm:p-7 shadow-sm md:col-span-4">
 					<Languages className="mb-5 h-9 w-9 text-secondary" />
 					<h3 className="mb-3 text-xl font-semibold text-primary">
-						Quranic Translation
+						Easy Tajweed
 					</h3>
 					<p className="mb-6 text-sm text-foreground/75">
-						Understand meanings with contextual language guidance.
+						Learn the rules that help you recite Quran correctly.
 					</p>
 					<div className="flex items-center gap-1 text-secondary">
 						{stars.map((star) => (
@@ -67,10 +64,10 @@ export function FeaturedCoursesSection() {
 				<article className="rounded-xl border border-secondary/15 bg-accent/20 p-5 sm:p-7 shadow-sm md:col-span-4">
 					<BookOpenText className="mb-5 h-9 w-9 text-secondary" />
 					<h3 className="mb-3 text-xl font-semibold text-primary">
-						Tafseer Studies
+						Hifz Help
 					</h3>
 					<p className="mb-6 text-sm text-foreground/75">
-						Unveil deeper meanings through classical and modern sources.
+						We help you remember and review what you learn.
 					</p>
 					<div className="flex items-center gap-1 text-secondary">
 						{stars.map((star) => (
@@ -79,27 +76,26 @@ export function FeaturedCoursesSection() {
 					</div>
 				</article>
 
-				<article className="flex flex-col md:flex-row overflow-hidden rounded-xl border border-primary/20 bg-primary shadow-sm md:col-span-8">
+				<article className="flex flex-col overflow-hidden rounded-xl border border-primary/20 bg-primary shadow-sm md:col-span-8 md:flex-row">
 					<div className="flex flex-1 flex-col p-6 sm:p-8 md:p-10">
 						<h3 className="mb-4 text-3xl font-bold tracking-tight text-background" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-							Islamic History
+							Keep Learning With Us
 						</h3>
 						<p className="mb-8 text-base leading-relaxed text-background/80 md:pr-6">
-							Follow the timeline of revelation, scholars, and civilizations to
-							connect faith with historical context. Explore the profound legacies 
-							of the golden ages.
+							Choose lessons that fit your level, from the first lesson to more
+							advanced study.
 						</p>
 						<div className="mt-auto pt-4">
 							<Link
-								href="/fees"
+								href="/enroll"
 								className="inline-flex items-center justify-center rounded-full bg-[#C5A059] px-6 py-2.5 text-sm font-bold tracking-[0.12em] text-[#1A1A1A] shadow-sm transition-all hover:bg-[#d3b26b] hover:shadow-[0_0_15px_rgba(197,160,89,0.4)]"
 							>
-								LEARN TODAY
+								ENROLL TODAY
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</div>
 					</div>
-					<div className="relative min-h-[200px] w-full shrink-0 md:w-[40%]">
+					<div className="relative w-full shrink-0 min-h-44 md:w-[40%] md:min-h-0">
 						<Image
 							src="/images/home/islamic_history_cover.png"
 							alt="Islamic History - Classical illumination and astronomy"

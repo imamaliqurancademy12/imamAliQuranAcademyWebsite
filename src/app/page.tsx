@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import { FeaturedCoursesSection } from "@/components/home/featured-courses-section";
 
 export const metadata: Metadata = {
-  title: "Home | Online Quran Courses with Expert Scholars",
+  title: "Online Quran Academy | Learn Quran Online",
   description:
-    "Imam Ali Quran Academy offers live online Quran classes with certified scholars. Tajweed, Tafseer, Islamic History and more for all ages.",
+    "Imam Ali Quran Academy teaches Quran online for kids, beginners, and adults. Join live classes with friendly teachers and learn step by step.",
+  keywords: [
+    "online quran academy",
+    "learn quran online",
+    "online quran classes for beginners",
+    "online quran classes",
+    "quran classes for kids",
+    "quran classes for adults",
+  ],
   openGraph: {
-    title: "Imam Ali Quran Academy — Sacred Knowledge Online",
-    description: "Live online Quran courses with certified Islamic scholars.",
+    title: "Online Quran Academy | Learn Quran Online",
+    description:
+      "Live Quran classes for kids, beginners, and adults with friendly teachers.",
     url: "https://imamaliquranacademy.com",
   },
 };

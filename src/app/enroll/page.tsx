@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import EnrollForm from "@/components/enroll/enroll-form";
 
 export const metadata: Metadata = {
-  title: "Enroll — Imam Ali Quran Academy",
+  title: "Enroll | Online Quran Classes UK and Canada",
   description:
-    "Register for your free trial at Imam Ali Quran Academy. Choose your course, preferred schedule, and our team will confirm your slot within 24 hours.",
+    "Join online Quran classes UK and online Quran classes Canada. Register now and connect with a Quran tutor online within 24 hours.",
+  keywords: [
+    "online quran classes uk",
+    "online quran classes canada",
+    "quran tutor online",
+  ],
   openGraph: {
-    title: "Enroll — Imam Ali Quran Academy",
-    description: "Start your Quranic journey. Register for a free trial with certified scholars.",
+    title: "Enroll for Online Quran Classes",
+    description:
+      "Register now for online Quran classes in the UK and Canada with a Quran tutor online.",
     url: "https://imamaliquranacademy.com/enroll",
   },
 };

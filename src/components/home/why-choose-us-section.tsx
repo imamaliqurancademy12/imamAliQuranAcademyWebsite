@@ -3,21 +3,18 @@ import { BadgeCheck, Clock3, Users } from "lucide-react";
 
 const highlights = [
 	{
-		title: "Authentic Lineage",
-		description:
-			"Our teachers hold Ijazah with chains of narration rooted in classical scholarship.",
+		title: "Qualified Teachers",
+		description: "Our teachers know how to teach Quran in a clear way.",
 		Icon: BadgeCheck,
 	},
 	{
-		title: "Flexible Learning",
-		description:
-			"Digital classrooms designed around your schedule without compromising rigor.",
+		title: "Flexible Classes",
+		description: "You can learn at a time that works for you.",
 		Icon: Clock3,
 	},
 	{
-		title: "Global Community",
-		description:
-			"Join students from many countries in a supportive and spiritually focused environment.",
+		title: "Students Everywhere",
+		description: "People from many places join our classes.",
 		Icon: Users,
 	},
 ];
@@ -38,21 +35,21 @@ export function WhyChooseUsSection() {
 					<div className="absolute -bottom-6 -right-4 hidden border border-secondary/30 bg-secondary px-8 py-6 text-primary md:block">
 						<p className="text-4xl font-bold leading-none">25+</p>
 						<p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em]">
-							Years of Tradition
+							Years of Teaching
 						</p>
 					</div>
 				</div>
 
 				<div className="rounded-xl border border-secondary/15 bg-background/60 p-7 shadow-sm md:p-9">
 					<p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-						Philosophy
+						Why Students Choose Us
 					</p>
 					<h2 className="mb-5 text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
-						Why Choose Us
+						A Simple Quran Learning Place
 					</h2>
 					<p className="mb-9 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
-						We bridge ancient wisdom and modern accessibility, helping students
-						grow with clarity, consistency, and spiritual depth.
+						We help families, beginners, and adults learn Quran online with
+						friendly teachers and easy lessons.
 					</p>
 
 					<div className="space-y-6">

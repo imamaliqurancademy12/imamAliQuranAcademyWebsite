@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { SiteHeader } from "@/components/home/site-header";
 
 export const metadata: Metadata = {
-  title: "Courses — Tajweed, Tafseer, Islamic History & More",
+  title: "Courses | Online Quran Classes for Kids and Beginners",
   description:
-    "Browse our Quran courses: Tajweed Mastery, Quranic Translation, Tafseer Studies, and Islamic History. Live classes with expert scholars at all levels.",
+    "Join online Quran classes for kids and beginners. Learn Tajweed online, join online Hifz classes, and study Quran step by step.",
+  keywords: [
+    "online quran classes for kids",
+    "online quran classes for beginners",
+    "learn tajweed online",
+    "online hifz classes",
+    "quran tutor online",
+  ],
   openGraph: {
-    title: "Quran Courses — Imam Ali Quran Academy",
-    description: "Explore curated Quran learning pathways for beginners to advanced students.",
+    title: "Online Quran Classes for Kids and Beginners",
+    description:
+      "Learn Tajweed online and join online Hifz classes with friendly live teachers.",
     url: "https://imamaliquranacademy.com/courses",
   },
 };

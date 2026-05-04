@@ -1,5 +1,6 @@
 import { BookOpen, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Course = {
   title: string;
@@ -8,104 +9,117 @@ type Course = {
   description: string;
   rating: number;
   image: string;
+  enrollCourse: string;
 };
 
 const courses: Course[] = [
   {
-    title: "Tajweed Mastery",
-    category: "ARTICULATION",
-    level: "Advanced",
-    description: "Perfect the pronunciation of the Holy Quran through deep phonetics and traditional recitation methods.",
+    title: "Online Quran Classes for Kids",
+    category: "KIDS",
+    level: "Beginner",
+    description: "Fun and simple Quran classes for kids with patient teachers.",
     rating: 5,
     image: "/images/courses/tajweed.webp",
+    enrollCourse: "foundation",
   },
   {
-    title: "Quranic Translation",
-    category: "LINGUISTICS",
-    level: "Intermediate",
-    description: "Uncover the profound meanings behind the sacred text through morphological analysis and context.",
+    title: "Online Quran Classes for Beginners",
+    category: "BEGINNER",
+    level: "Beginner",
+    description: "Start from the basics and learn Quran reading step by step.",
     rating: 4,
     image: "/images/courses/translation.webp",
+    enrollCourse: "foundation",
   },
   {
-    title: "Islamic History",
-    category: "CIVILIZATION",
-    level: "Foundation",
-    description: "Journey through the golden ages of Islamic civilization, exploring philosophy, art, and leadership.",
+    title: "Learn Tajweed Online",
+    category: "TAJWEED",
+    level: "All Levels",
+    description: "Learn Tajweed rules in a clear and easy way with live feedback.",
     rating: 5,
     image: "/images/courses/history.webp",
+    enrollCourse: "tajweed",
   },
   {
-    title: "Tafseer Studies",
-    category: "EXEGESIS",
-    level: "Advanced",
-    description: "An in-depth exploration of the classical commentaries of the Quran, studying historical contexts.",
+    title: "Online Hifz Classes",
+    category: "HIFZ",
+    level: "All Levels",
+    description: "Memorize Quran with daily plans, revision, and teacher support.",
     rating: 4,
     image: "/images/courses/tfseer.webp",
+    enrollCourse: "immersive",
   },
   {
     title: "Qaida With Tajweed",
     category: "FOUNDATION",
     level: "Beginner",
-    description: "Master Arabic phonetics and letter recognition to build a strong foundation.",
+    description: "Learn Arabic letters and sounds before full Quran reading.",
     rating: 5,
     image: "/images/courses/Qaida With Tajweed.jpg",
+    enrollCourse: "foundation",
   },
   {
     title: "Basic Quran Reading",
     category: "LITERACY",
     level: "Beginner",
-    description: "Develop fluency in reading the Holy Quran with correct pronunciation.",
+    description: "Improve your Quran reading with easy guided practice.",
     rating: 5,
     image: "/images/courses/Basic Quran Reading.jpg",
+    enrollCourse: "steady",
   },
   {
     title: "Quran Memorization",
     category: "HIFZ",
     level: "Advanced",
-    description: "A structured program for systematic Hifz with revision techniques.",
+    description: "Follow a clear Hifz plan with regular revision.",
     rating: 5,
     image: "/images/courses/Quran Memorization.webp",
+    enrollCourse: "immersive",
   },
   {
     title: "Islamic Fiqah",
     category: "JURISPRUDENCE",
     level: "Intermediate",
-    description: "Understand the practical rulings of Islamic law regarding worship and daily life.",
+    description: "Learn basic Islamic rulings for worship and daily life.",
     rating: 4,
     image: "/images/courses/Islamic Fiqah.jpeg",
+    enrollCourse: "dedicated",
   },
   {
     title: "Saheefa Sajjadia",
     category: "SPIRITUALITY",
     level: "Intermediate",
-    description: "Explore the beautiful supplications and spiritual teachings of Imam Sajjad (as).",
+    description: "Learn selected duas and their simple meanings.",
     rating: 5,
     image: "/images/courses/Saheefa Sajjadia.png",
+    enrollCourse: "dedicated",
   },
   {
     title: "Nehjul Balagha",
     category: "ELOQUENCE",
     level: "Advanced",
-    description: "Deep dive into the sermons, letters, and wisdom of Imam Ali (as).",
+    description: "Read important sayings and lessons from Imam Ali (as).",
     rating: 5,
     image: "/images/courses/Nehjul Balagha.webp",
+    enrollCourse: "dedicated",
   },
   {
     title: "Dua & Adhkar",
     category: "DAILY PRACTICE",
     level: "Beginner",
-    description: "Learn essential daily prayers and morning/evening remembrances.",
+    description: "Learn daily duas and simple adhkar for every day.",
     rating: 5,
     image: "/images/courses/Dua & Adhkar.png",
+    enrollCourse: "foundation",
   },
   {
     title: "Arabic Language",
     category: "LINGUISTICS",
     level: "Intermediate",
-    description: "Understand the grammar and vocabulary needed to comprehend the Quran.",
+    description: "Build Arabic words and grammar for better Quran understanding.",
     rating: 4,
     image: "/images/courses/Arabic Language.jpg",
+    enrollCourse: "steady",
   },
 ];
 
@@ -149,8 +163,8 @@ function CourseCard({ course }: { course: Course }) {
         </div>
 
         {/* Rating Section - Fixed to bottom */}
-        <div className="mt-8 pt-6 border-t border-[#775a22]/10">
-          <div className="flex gap-1">
+        <div className="mt-8 border-t border-[#775a22]/10 pt-6">
+          <div className="mb-4 flex gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star 
                 key={i} 
@@ -158,6 +172,12 @@ function CourseCard({ course }: { course: Course }) {
               />
             ))}
           </div>
+          <Link
+            href={`/enroll?course=${course.enrollCourse}`}
+            className="inline-flex h-10 w-full items-center justify-center rounded-full bg-[#C5A059] px-5 text-xs font-bold tracking-[0.12em] text-[#1A1A1A] transition-all hover:bg-[#d3b26b]"
+          >
+            ENROLL FOR THIS COURSE
+          </Link>
         </div>
       </div>
     </div>
@@ -176,4 +196,4 @@ export function CoursesGridSection() {
       </div>
     </section>
   );
-}
+}

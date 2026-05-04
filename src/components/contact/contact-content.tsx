@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 export function ContactContent() {
   return (
-    <section className="bg-[#fdfae9] py-20 px-5 md:py-32 md:px-10">
+    <section className="bg-[#fdfae9] px-5 py-20 md:px-10 md:py-32">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Contact Information */}
@@ -13,9 +13,8 @@ export function ContactContent() {
                 Get in <span className="italic text-[#B8965A]">Touch</span>
               </h2>
               <p className="text-lg leading-relaxed text-[#5F7A8A]">
-                Whether you have questions about enrollment, curriculum, or
-                scholarly guidance, our team is here to support your spiritual
-                journey.
+                Have a question about classes or enrollment? Our team is ready to
+                help you.
               </p>
             </div>
 
@@ -25,7 +24,7 @@ export function ContactContent() {
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#0B2C3D]">Email Us</h4>
+                  <h4 className="font-bold text-[#0B2C3D]">Email</h4>
                   <p className="text-[#5F7A8A]">imamaliquranacademy@gmail.com</p>
                 </div>
               </div>
@@ -35,7 +34,7 @@ export function ContactContent() {
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#0B2C3D]">Call Us</h4>
+                  <h4 className="font-bold text-[#0B2C3D]">Phone</h4>
                   <p className="text-[#5F7A8A]">+92 321 1194725</p>
                 </div>
               </div>
@@ -46,14 +45,14 @@ export function ContactContent() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0B2C3D]">Location</h4>
-                  <p className="text-[#5F7A8A]">Model town lahore , Pakistan</p>
+                  <p className="text-[#5F7A8A]">Model Town, Lahore, Pakistan</p>
                 </div>
               </div>
             </div>
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/923211194725"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-fit items-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-sm font-bold tracking-widest text-white shadow-lg transition-all hover:bg-[#20bd5a] hover:shadow-xl md:text-base"
@@ -73,7 +72,7 @@ export function ContactContent() {
                 <label className="text-sm font-bold tracking-wider text-[#0B2C3D]">NAME</label>
                 <input
                   type="text"
-                  placeholder="Your Full Name"
+                  placeholder="Your name"
                   className="w-full rounded-2xl border border-[#0B2C3D]/10 bg-white/50 px-6 py-4 text-[#0B2C3D] outline-none transition-all focus:border-[#B8965A] focus:ring-1 focus:ring-[#B8965A]"
                 />
               </div>
@@ -81,14 +80,14 @@ export function ContactContent() {
                 <label className="text-sm font-bold tracking-wider text-[#0B2C3D]">EMAIL</label>
                 <input
                   type="email"
-                  placeholder="Your Email Address"
+                  placeholder="Your email"
                   className="w-full rounded-2xl border border-[#0B2C3D]/10 bg-white/50 px-6 py-4 text-[#0B2C3D] outline-none transition-all focus:border-[#B8965A] focus:ring-1 focus:ring-[#B8965A]"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold tracking-wider text-[#0B2C3D]">MESSAGE</label>
                 <textarea
-                  placeholder="How can we help you on your journey?"
+                  placeholder="Write your message"
                   rows={5}
                   className="w-full rounded-2xl border border-[#0B2C3D]/10 bg-white/50 px-6 py-4 text-[#0B2C3D] outline-none transition-all focus:border-[#B8965A] focus:ring-1 focus:ring-[#B8965A]"
                 />

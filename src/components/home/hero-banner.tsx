@@ -1,8 +1,24 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Star } from "lucide-react"
+import { ArrowRight, BookOpen, GraduationCap, Users, Star } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+const trustPoints = [
+	{
+		label: "Friendly teachers",
+		description: "Our teachers help you learn with care and patience.",
+		Icon: GraduationCap,
+	},
+	{
+		label: "Kids and adults",
+		description: "We teach children, adults, and new students.",
+		Icon: Users,
+	},
+	{
+		label: "Easy for beginners",
+		description: "We start from the basics and move slowly.",
+		Icon: BookOpen,
+	},
+]
 
 export function HeroBanner() {
 	return (
@@ -32,34 +48,60 @@ export function HeroBanner() {
 						))}
 					</div>
 					<p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
-						The Highest Standard of Learning
+						Trusted Quran Learning
 					</p>
 				</div>
 
-				<h1 className="mb-6 max-w-4xl text-[2.25rem] font-bold leading-[1.05] text-primary sm:text-6xl sm:leading-tight md:text-7xl lg:text-8xl">
-					IMAM ALI QURAN
+				<h1 className="mb-6 max-w-4xl text-4xl font-bold leading-[1.05] text-primary sm:text-5xl sm:leading-tight md:text-6xl lg:text-7xl">
+					Online Quran
 					<span className="ml-3 block italic text-secondary md:inline">Academy</span>
 				</h1>
 
 				<p className="mb-8 max-w-2xl text-base leading-relaxed text-foreground/80 sm:text-lg md:mb-10 md:text-xl">
-					Illuminating the path of divine knowledge through traditional
-					scholarly excellence and modern digital accessibility.
+					Learn Quran online with friendly teachers. Our live classes are for
+					kids, adults, and beginners. We help you read Quran step by step.
 				</p>
+
+				<div className="mb-8 grid gap-3 sm:grid-cols-3 md:mb-10">
+					{trustPoints.map((point) => (
+						<div
+							key={point.label}
+							className="rounded-2xl border border-secondary/15 bg-background/72 p-4 shadow-sm backdrop-blur-sm"
+						>
+							<div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-secondary/12 text-secondary">
+								<point.Icon className="h-5 w-5" />
+							</div>
+							<h2 className="mb-1 text-sm font-semibold text-primary">
+								{point.label}
+							</h2>
+							<p className="text-xs leading-relaxed text-foreground/72">
+								{point.description}
+							</p>
+						</div>
+					))}
+				</div>
 
 				<div className="flex flex-wrap gap-3 pt-1 md:gap-4">
 					<Link
-						href="/about"
+						href="/courses"
+						className="inline-flex h-10 w-full items-center justify-center rounded-lg border border-secondary/60 bg-background/40 px-8 text-sm font-medium tracking-[0.12em] text-primary transition-all hover:border-secondary hover:bg-secondary/10 focus-visible:outline-none focus-visible:ring-2 sm:w-auto"
+					>
+						VIEW CLASSES
+					</Link>
+
+					<Link
+						href="/enroll"
 						className="inline-flex h-10 w-full items-center justify-center rounded-full bg-[#C5A059] px-8 text-sm font-bold tracking-[0.12em] text-[#1A1A1A] shadow-sm transition-all hover:bg-[#d3b26b] hover:shadow-[0_0_15px_rgba(197,160,89,0.4)] focus-visible:outline-none focus-visible:ring-2 sm:w-auto"
 					>
-						LEARN NOW
+						ENROLL NOW
 						<ArrowRight className="ml-2 h-4 w-4" />
 					</Link>
 
 					<Link
-						href="/fees"
+						href="/contact"
 						className="inline-flex h-10 w-full items-center justify-center rounded-lg border border-secondary/60 bg-background/40 px-8 text-sm font-medium tracking-[0.12em] text-primary transition-all hover:border-secondary hover:bg-secondary/10 focus-visible:outline-none focus-visible:ring-2 sm:w-auto"
 					>
-						OUR CURRICULUM
+						CONTACT US
 					</Link>
 				</div>
 			</div>

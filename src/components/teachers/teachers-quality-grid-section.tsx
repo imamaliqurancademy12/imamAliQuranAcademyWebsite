@@ -16,39 +16,39 @@ type QualityItem = {
 
 const qualityItems: QualityItem[] = [
   {
-    title: "Traditional Ijazah Certification",
+    title: "Verified Qualifications",
     description:
-      "Mastery of classical texts and direct chains of transmission (Isnad) from recognized global scholars.",
+      "Each teacher is checked for real Quran study credentials.",
     icon: BadgeCheck,
   },
   {
-    title: "Pedagogical Training",
+    title: "Teaching Training",
     description:
-      "Modern teaching methodologies tailored for effective online learning and student engagement.",
+      "Teachers are trained to teach clearly in online classes.",
     icon: BookOpen,
   },
   {
-    title: "Arabic and English Fluency",
+    title: "Arabic and English",
     description:
-      "Articulate communication to bridge classical wisdom and diverse global student populations.",
+      "Teachers can explain lessons in a simple way for more students.",
     icon: Languages,
   },
   {
-    title: "Character and Ethics (Adab)",
+    title: "Good Character",
     description:
-      "Teachers who embody the prophetic values they teach, serving as noble spiritual role models.",
+      "Teachers are respectful, kind, and good role models.",
     icon: ShieldCheck,
   },
   {
-    title: "Technology-Friendly",
+    title: "Online Teaching Skills",
     description:
-      "Experts in virtual classroom tools, interactive digital pedagogy, and modern LMS platforms.",
+      "Teachers know how to use online tools for smooth classes.",
     icon: MonitorSmartphone,
   },
   {
-    title: "Continuous Monitoring",
+    title: "Regular Review",
     description:
-      "Regular academic audits and student feedback loops ensuring constant growth and excellence.",
+      "We review teacher performance and student feedback often.",
     icon: ChartLine,
   },
 ];
@@ -64,11 +64,11 @@ export function TeachersQualityGridSection() {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="mb-0 text-center md:mb-0 md:text-left">
           <h2 className="mb-4 font-heading text-3xl font-bold text-primary md:text-4xl">
-            Foundation of Mastery
+            Why Families Trust Our Teachers
           </h2>
           <p className="mx-auto mb-4 max-w-xl text-base leading-relaxed text-foreground/70 md:mx-0">
-            Each teacher at our academy meets six essential pillars of quality, verified through our unique
-            accreditation framework.
+            Every teacher follows clear quality standards, from qualifications to
+            teaching style and student support.
           </p>
         </div>
 

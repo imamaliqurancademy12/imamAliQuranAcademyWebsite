@@ -8,7 +8,7 @@ export function CoursesSpotlightSection() {
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 md:px-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
-          <div className="relative h-[24rem] overflow-hidden rounded-xl border border-secondary/20 md:h-[30rem]">
+          <div className="relative h-96 overflow-hidden rounded-xl border border-secondary/20 md:h-120">
             <Image
               src="/images/courses/hero.webp"
               alt="Scholarly learning hall"
@@ -20,7 +20,7 @@ export function CoursesSpotlightSection() {
 
           <div className="absolute -bottom-8 -right-2 max-w-xs border border-secondary/20 bg-background p-6 shadow-lg md:right-0">
             <p className="font-heading text-lg leading-relaxed text-primary/85 italic">
-              &ldquo;The seeking of knowledge is obligatory for every seeker.&rdquo;
+              &ldquo;Every student can learn Quran with clear daily steps.&rdquo;
             </p>
             <div className="mt-4 h-0.5 w-12 bg-secondary" />
           </div>
@@ -28,11 +28,11 @@ export function CoursesSpotlightSection() {
 
         <div className="space-y-8">
           <p className="text-xs font-semibold tracking-[0.22em] text-secondary uppercase">
-            Experience Excellence
+            Course Support
           </p>
 
           <h2 className="font-heading text-4xl leading-tight text-primary md:text-5xl">
-            Digital Learning with a <span className="italic text-secondary">Scholarly Heart</span>
+            Learn Online with <span className="italic text-secondary">Simple Guidance</span>
           </h2>
 
           <div className="space-y-7 pt-2">
@@ -41,9 +41,9 @@ export function CoursesSpotlightSection() {
                 <BookOpenCheck className="h-7 w-10" />
               </div>
               <div>
-                <h3 className="mb-1 font-heading text-xl text-primary">Structured Pedagogy</h3>
+                <h3 className="mb-1 font-heading text-xl text-primary">Clear Study Plan</h3>
                 <p className="text-sm leading-relaxed text-primary/70 md:text-base">
-                  Our curriculum is curated by scholars to ensure a balanced progression from foundations to mastery.
+                  We give you clear lessons from beginner level to advanced level.
                 </p>
               </div>
             </article>
@@ -53,9 +53,9 @@ export function CoursesSpotlightSection() {
                 <PenTool className="h-7 w-10" />
               </div>
               <div>
-                <h3 className="mb-1 font-heading text-xl text-primary">Artistic Integration</h3>
+                <h3 className="mb-1 font-heading text-xl text-primary">Teacher Feedback</h3>
                 <p className="text-sm leading-relaxed text-primary/70 md:text-base">
-                  Visual aids and traditional calligraphy are woven into lessons to inspire the soul while informing the mind.
+                  Your teacher checks your recitation and helps you improve every week.
                 </p>
               </div>
             </article>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, Suspense } from "react";
+import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Send, CheckCircle, User, Mail, Phone, BookOpen, Clock, MessageSquare, ChevronDown } from "lucide-react";
 
@@ -9,8 +10,8 @@ const COURSES = [
   { value: "steady", label: "Steady — 2 Days / Week" },
   { value: "dedicated", label: "Dedicated — 3 Days / Week" },
   { value: "immersive", label: "Immersive — 5 Days / Week" },
-  { value: "tajweed", label: "Tajweed Mastery" },
-  { value: "translation", label: "Quranic Translation" },
+  { value: "tajweed", label: "Learn Tajweed Online" },
+  { value: "translation", label: "Quran Translation" },
   { value: "tafseer", label: "Tafseer Studies" },
   { value: "islamic-history", label: "Islamic History" },
 ];
@@ -35,11 +36,6 @@ function EnrollFormInner() {
   const courseParam = searchParams.get("course") ?? "";
 
   const matched = COURSES.find((c) => c.value === courseParam.toLowerCase());
-  const courseName = matched
-    ? matched.label.split("—")[0].trim()
-    : courseParam
-      ? courseParam.charAt(0).toUpperCase() + courseParam.slice(1)
-      : "Free";
 
   const [form, setForm] = useState({
     name: "",
@@ -90,12 +86,10 @@ function EnrollFormInner() {
           <CheckCircle className="h-10 w-10 text-secondary" />
         </div>
         <h2 className="mb-3 text-3xl font-bold text-primary" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-          Registration Received!
+          Registration Received
         </h2>
         <p className="mb-8 max-w-md text-base text-primary/70 leading-relaxed">
-          Thank you, <strong>{form.name}</strong>. We will contact you within{" "}
-          <strong>24 hours</strong> to confirm your slot for the{" "}
-          <strong>{COURSES.find((c) => c.value === form.course)?.label.split("—")[0].trim() ?? form.course}</strong> course, in shā Allāh.
+          Thank you, <strong>{form.name}</strong>. We will contact you within <strong>24 hours</strong> to confirm your class for <strong>{COURSES.find((c) => c.value === form.course)?.label.split("—")[0].trim() ?? form.course}</strong>.
         </p>
         <button
           onClick={() => router.push("/")}
@@ -118,17 +112,16 @@ function EnrollFormInner() {
       {/* Header */}
       <div className="mb-10">
         <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-          Enrollment
+          Enrollment Form
         </p>
         <h1
           className="text-3xl font-bold text-primary sm:text-4xl md:text-5xl"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
-          Register for Your{" "}
-          <span className="italic text-secondary">{courseName}</span> Trial
+          Start Your <span className="italic text-secondary">Online Quran Class</span>
         </h1>
         <p className="mt-4 max-w-xl text-base text-primary/65 leading-relaxed">
-          Fill in the form below and our team will reach out within 24 hours to confirm your slot, in shā Allāh.
+          Fill this form to join our online Quran classes available for students in the UK, Canada, and worldwide. A qualified Quran tutor online will contact you within 24 hours.
         </p>
       </div>
 
@@ -242,7 +235,7 @@ function EnrollFormInner() {
               value={form.message}
               onChange={handleChange}
               rows={4}
-              placeholder="Any questions, special requirements, or notes for our team..."
+              placeholder="Any question or note for our team"
               className={`${inputCls} resize-none`}
             />
           </div>
@@ -250,7 +243,7 @@ function EnrollFormInner() {
           {/* Error */}
           {status === "error" && (
             <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600 border border-red-200">
-              Something went wrong. Please try again or contact us directly.
+              Something went wrong. Please try again or contact us.
             </p>
           )}
 
@@ -261,9 +254,16 @@ function EnrollFormInner() {
               disabled={status === "loading"}
               className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#C5A059] py-4 text-sm font-bold tracking-[0.14em] text-[#1A1A1A] shadow-md transition-all hover:bg-[#d3b26b] hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] active:scale-[0.98] disabled:opacity-60 sm:w-auto sm:px-12"
             >
-              {status === "loading" ? "Submitting..." : "REGISTER NOW"}
+              {status === "loading" ? "Submitting..." : "ENROLL NOW"}
               <Send className="h-4 w-4" />
             </button>
+            <p className="mt-4 text-sm text-primary/60">
+              Need help before enrolling?{" "}
+              <Link href="/contact" className="font-semibold text-secondary hover:underline">
+                Contact us
+              </Link>
+              .
+            </p>
           </div>
         </form>
       </div>
@@ -273,7 +273,7 @@ function EnrollFormInner() {
 
 export default function EnrollForm() {
   return (
-    <Suspense fallback={<div className="py-20 text-center text-primary/50">Loading…</div>}>
+    <Suspense fallback={<div className="py-20 text-center text-primary/50">Loading...</div>}>
       <EnrollFormInner />
     </Suspense>
   );

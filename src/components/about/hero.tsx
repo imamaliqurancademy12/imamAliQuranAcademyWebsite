@@ -15,23 +15,23 @@ export function HeroHeader() {
       </div>
 
       {/* Synchronized Gradient System */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#fdfae9]/95 via-[#fdfae9]/88 to-[#fdfae9]/35 md:from-[#fdfae9] md:via-[#fdfae9]/90 md:to-[#fdfae9]/30" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#fdfae9]/45 via-transparent to-transparent md:from-transparent" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#fdfae9]/95 via-[#fdfae9]/88 to-[#fdfae9]/35 md:from-[#fdfae9] md:via-[#fdfae9]/90 md:to-[#fdfae9]/30" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-t from-[#fdfae9]/45 via-transparent to-transparent md:from-transparent" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_85%_0%,rgba(184,150,90,0.26),transparent_56%)]" />
 
       {/* Content Area */}
       <div className="mx-auto w-full max-w-7xl animate-in fade-in slide-in-from-left-12 duration-1000 ease-out">
         <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.28em] text-[#B8965A]">
-          The Digital Sanctuary
+          About Our Academy
         </span>
 
-        <h1 className="max-w-4xl text-5xl font-bold leading-[0.95] text-[#0B2C3D] sm:text-6xl md:text-7xl lg:text-8xl uppercase">
+    		<h1 className="max-w-4xl text-4xl font-bold leading-[0.98] text-[#0B2C3D] sm:text-5xl md:text-6xl lg:text-7xl uppercase">
           ABOUT <span className="italic text-[#B8965A]">US</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-base leading-relaxed text-[#0B2C3D]/80 sm:text-lg md:text-xl">
-          <span className="font-bold uppercase tracking-widest text-[#0B2C3D]">STEP</span> into our history. Discover our mission to bridge traditional
-          certified heritage with modern scholarly excellence for the next generation.
+          Learn who we are, meet our teachers, and see how we help people learn
+          Quran online in a simple way.
         </p>
       </div>
     </section>

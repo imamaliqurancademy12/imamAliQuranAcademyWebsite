@@ -20,22 +20,22 @@ export function ContactHero() {
         />
       </div>
 
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/95 via-background/88 to-background/35 md:from-background md:via-background/90 md:to-background/30" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-background/45 via-transparent to-transparent md:from-transparent" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-background/95 via-background/88 to-background/35 md:from-background md:via-background/90 md:to-background/30" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-t from-background/45 via-transparent to-transparent md:from-transparent" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_85%_0%,rgba(196,160,97,0.26),transparent_56%)]" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl animate-in fade-in slide-in-from-bottom-12 duration-1000 ease-out">
         <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
-          THE DIGITAL SANCTUARY
+          We Are Here To Help
         </span>
 
-        <h1 className="max-w-4xl text-left text-5xl font-bold leading-[0.95] text-primary sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="max-w-4xl text-left text-4xl font-bold leading-[1.02] text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           CONTACT <span className="italic text-secondary">US</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
-          Have questions? Our spiritual advisors are here to guide your
-          academy integration.
+          Ask us about classes, fees, or enrollment. We will guide you step by
+          step.
         </p>
       </div>
     </section>
