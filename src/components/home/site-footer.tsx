@@ -13,6 +13,9 @@ const navLinks = [
   { label: "Teachers", href: "/teachers" },
   { label: "Fees", href: "/fees" },
   { label: "Contact", href: "/contact" },
+  { label: "Canada Quran Classes", href: "/online-quran-classes-canada" },
+  { label: "Australia Quran Classes", href: "/online-quran-classes-australia" },
+  { label: "Blog: Quran Classes for Kids", href: "/blog/best-online-quran-classes-for-kids" },
 ];
 
 const contactInfo = {
