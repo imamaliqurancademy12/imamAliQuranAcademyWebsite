@@ -22,6 +22,7 @@ const navItems = [
   { label: "Teachers", href: "/teachers" },
   { label: "Fees", href: "/fees" },
   { label: "Contact", href: "/contact" },
+  
 ];
 
 export function SiteHeader() {

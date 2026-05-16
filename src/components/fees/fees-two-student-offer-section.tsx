@@ -1,101 +1,215 @@
-import { Users } from "lucide-react";
+import React from "react";
+import Link from "next/link";
 
-type Duration = "30" | "60";
-
-type TwoStudentOffer = {
-  daysPerWeek: string;
-  usd: string;
-  aud?: string;
-  uk?: string;
-  europe?: string;
-  popular?: boolean;
-};
-
-const TWO_STUDENT_OFFERS_30: TwoStudentOffer[] = [
-  { daysPerWeek: "1 Day / Week", usd: "USD $50" },
-  { daysPerWeek: "2 Days / Week", usd: "USD $60" },
-  { daysPerWeek: "3 Days / Week", usd: "USD $70" },
+const feeSections = [
   {
-    daysPerWeek: "5 Days / Week",
-    usd: "USD $100",
-    aud: "AUD $100",
-    uk: "UK £60",
-    europe: "€60",
-    popular: true,
+    heading: "Weekday Classes (Monday to Friday)",
+    plans: [
+      {
+        title: "1 Day / Week",
+        subtitle: "4 Days / Month",
+        duration: "30 Minutes / Day",
+        price: "$30",
+        badge: "Basic",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$30" },
+          { label: "Canada", value: "CAD $41" },
+          { label: "AUD", value: "AUD $42" },
+          { label: "UK", value: "£22" },
+          { label: "Europe", value: "€26" },
+        ],
+      },
+      {
+        title: "2 Days / Week",
+        subtitle: "8 Days / Month",
+        duration: "30 Minutes / Day",
+        price: "$35",
+        badge: "Standard",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$35" },
+          { label: "Canada", value: "CAD $48" },
+          { label: "AUD", value: "AUD $49" },
+          { label: "UK", value: "£26" },
+          { label: "Europe", value: "€30" },
+        ],
+      },
+      {
+        title: "3 Days / Week",
+        subtitle: "12 Days / Month",
+        duration: "30 Minutes / Day",
+        price: "$40",
+        badge: "Popular",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$40" },
+          { label: "Canada", value: "CAD $55" },
+          { label: "AUD", value: "AUD $56" },
+          { label: "UK", value: "£30" },
+          { label: "Europe", value: "€34" },
+        ],
+      },
+      {
+        title: "4 Days / Week",
+        subtitle: "16 Days / Month",
+        duration: "30 Minutes / Day",
+        price: "$45",
+        badge: "Advanced",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$45" },
+          { label: "Canada", value: "CAD $62" },
+          { label: "AUD", value: "AUD $63" },
+          { label: "UK", value: "£28" },
+          { label: "Europe", value: "€31" },
+        ],
+      },
+      {
+        title: "5 Days / Week",
+        subtitle: "20 Days / Month",
+        duration: "30 Minutes / Day",
+        price: "$55",
+        badge: "Best Value",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$55" },
+          { label: "Canada", value: "CAD $76" },
+          { label: "AUD", value: "AUD $77" },
+          { label: "UK", value: "£41" },
+          { label: "Europe", value: "€47" },
+        ],
+      },
+    ],
+  },
+  {
+    heading: "Weekend Classes (Saturday and Sunday)",
+    plans: [
+      {
+        title: "Saturday Only",
+        subtitle: "4 Days / Month",
+        duration: "45 Minutes / Day",
+        price: "$35",
+        badge: "Weekend",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$35" },
+          { label: "Canada", value: "CAD $48" },
+          { label: "AUD", value: "AUD $49" },
+          { label: "UK", value: "£26" },
+          { label: "Europe", value: "€30" },
+        ],
+      },
+      {
+        title: "Sunday Only",
+        subtitle: "4 Days / Month",
+        duration: "45 Minutes / Day",
+        price: "$35",
+        badge: "Weekend",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$35" },
+          { label: "Canada", value: "CAD $48" },
+          { label: "AUD", value: "AUD $49" },
+          { label: "UK", value: "£26" },
+          { label: "Europe", value: "€30" },
+        ],
+      },
+      {
+        title: "Saturday + Sunday",
+        subtitle: "8 Days / Month",
+        duration: "45 Minutes / Day",
+        price: "$60",
+        badge: "Working Professionals",
+        buttonLabel: "Select Plan",
+        currencyBubbles: [
+          { label: "USD", value: "$60" },
+          { label: "Canada", value: "CAD $83" },
+          { label: "AUD", value: "AUD $84" },
+          { label: "UK", value: "£45" },
+          { label: "Europe", value: "€52" },
+        ],
+      },
+    ],
   },
 ];
 
-function applyDoubleMinusTen(priceText: string): string {
-  return priceText.replace(/(\d+(?:\.\d+)?)/, (value) => {
-    const num = Number(value);
-    return String(num * 2 - 10);
-  });
-}
-
-function getOffersByDuration(duration: Duration): TwoStudentOffer[] {
-  if (duration === "30") {
-    return TWO_STUDENT_OFFERS_30;
-  }
-
-  return TWO_STUDENT_OFFERS_30.map((offer) => ({
-    ...offer,
-    usd: applyDoubleMinusTen(offer.usd),
-    aud: offer.aud ? applyDoubleMinusTen(offer.aud) : undefined,
-    uk: offer.uk ? applyDoubleMinusTen(offer.uk) : undefined,
-    europe: offer.europe ? applyDoubleMinusTen(offer.europe) : undefined,
-  }));
-}
-
-type FeesTwoStudentOfferSectionProps = {
-  duration: Duration;
-};
-
-export function FeesTwoStudentOfferSection({ duration }: FeesTwoStudentOfferSectionProps) {
-  const offers = getOffersByDuration(duration);
-
+export function PricingGrid() {
   return (
-    <section className="relative mx-auto mb-16 w-full max-w-7xl overflow-hidden rounded-3xl px-4 py-12 sm:mb-20 sm:px-6 sm:py-16 md:mb-24 md:px-8 md:py-20">
-      <div
-        className="absolute inset-0"
-        style={{ backgroundColor: "color-mix(in srgb, var(--secondary) 8%, transparent)" }}
-      />
+    <section className="bg-[#fdfae9] py-20 px-5 md:py-28 md:px-10">
+      <div className="mx-auto max-w-7xl space-y-20">
+        {feeSections.map((section, sectionIndex) => (
+          <div key={sectionIndex} className="space-y-8">
+            <div>
+              <h2 className="text-3xl font-semibold tracking-tight text-[#0B2C3D] sm:text-4xl">
+                {section.heading}
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5F7A8A]">
+                Pick the plan that fits your week. All prices are clear and easy
+                to compare.
+              </p>
+            </div>
 
-      <div className="relative z-10 mb-8 px-2 text-center sm:mb-10 sm:px-4 md:mb-16">
-        <Users className="mx-auto mb-3 h-10 w-10 text-secondary sm:mb-4 sm:h-12 sm:w-12" />
-        <h2 className="mb-3 font-heading text-2xl text-primary sm:mb-4 sm:text-3xl md:text-4xl">Special Offer For Two Students</h2>
-        <p className="mx-auto mb-2 max-w-xl text-sm text-foreground/75 italic sm:text-base">
-          Shared learning for family members to cultivate spiritual growth together.
-        </p>
-      </div>
+            <div
+              className={`grid grid-cols-1 gap-6 ${
+                sectionIndex === 0
+                  ? "md:grid-cols-3 lg:grid-cols-5"
+                  : "md:grid-cols-3 lg:grid-cols-3"
+              }`}
+            >
+              {section.plans.map((plan, index) => (
+                <article
+                  key={index}
+                  className="flex h-full min-h-120 flex-col overflow-hidden rounded-[2rem] border-2 border-[#B8965A] bg-white/95 shadow-[0_18px_40px_rgba(11,44,61,0.08)] transition-transform duration-300 hover:-translate-y-2"
+                >
+                  <div className="flex h-14 items-center justify-center rounded-t-[1.5rem] bg-[#f3ead8] text-center text-[#0B2C3D] font-semibold text-xl sm:text-2xl">
+                    <h3 className="whitespace-nowrap px-4">{plan.title}</h3>
+                  </div>
 
-      <div
-        className="relative z-10 grid gap-4 px-1 sm:gap-5 sm:px-2 md:gap-6 md:px-4"
-        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 170px), 1fr))" }}
-      >
-        {offers.map((offer) => (
-          <article
-            key={`${duration}-${offer.daysPerWeek}`}
-            className={`mx-auto w-full max-w-60 rounded-xl px-5 py-7 text-center sm:max-w-60 sm:px-6 sm:py-9 md:px-8 md:py-11 ${
-              offer.popular
-                ? "md:-translate-y-2 border-2 border-secondary bg-secondary/25 shadow-lg"
-                : "border border-secondary/20 bg-background/90 backdrop-blur"
-            }`}
-          >
-            {offer.popular && (
-              <p className="mb-1 text-[10px] font-bold tracking-[0.16em] text-secondary uppercase">Most Popular</p>
-            )}
+                  <div className="flex grow flex-col gap-6 p-8 pb-10">
+                    <p className="mt-6 text-sm font-semibold uppercase tracking-[0.24em] text-[#0B2C3D]/80">
+                      {plan.subtitle}
+                    </p>
 
-            <p className="mb-1 text-base font-bold text-primary sm:text-lg">{offer.daysPerWeek}</p>
-            <p className="font-heading text-xl font-bold text-secondary sm:text-2xl">{offer.usd}</p>
+                    <div className="inline-flex items-center rounded-full border border-[#E0D6BC] bg-[#F8F3E8] px-4 py-2 text-sm font-semibold text-[#0B2C3D]">
+                      {plan.duration}
+                    </div>
 
-            {offer.popular && offer.aud && offer.uk && offer.europe && (
-              <div className="mt-3 flex flex-wrap justify-center gap-2 border-t border-secondary/20 pt-2 text-[10px] font-semibold text-secondary">
-                <span>{offer.aud}</span>
-                <span>{offer.uk}</span>
-                <span>{offer.europe}</span>
-              </div>
-            )}
-          </article>
+                    <div className="space-y-4">
+                      <div className="flex items-end gap-2">
+                        <span className="text-4xl font-semibold text-[#B8965A]">
+                          {plan.price}
+                        </span>
+                        <span className="pb-1 text-sm font-medium text-[#5F7A8A]">
+                          / month
+                        </span>
+                      </div>
+
+                      <div className="flex flex-wrap justify-center gap-2">
+                        {plan.currencyBubbles.map((currency, i) => (
+                          <span
+                            key={i}
+                            className="inline-flex min-w-22.5 items-center justify-center rounded-full border border-[#E9E3D4] bg-[#F7F3EB] px-3 py-2 text-[11px] font-semibold text-[#0B2C3D]"
+                          >
+                            {currency.label}: {currency.value}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-auto">
+                      <Link
+                        href="/enroll"
+                        className="flex h-12 items-center justify-center rounded-full bg-[#B48C4D] px-10 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#9b783f]"
+                      >
+                        Enroll Now
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </section>
