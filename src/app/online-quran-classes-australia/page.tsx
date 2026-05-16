@@ -145,6 +145,7 @@ export default function OnlineQuranClassesAustraliaPage() {
               alt="Students learning Quran online in Australia"
               fill
               className="object-cover"
+              unoptimized
             />
           </div>
         </div>

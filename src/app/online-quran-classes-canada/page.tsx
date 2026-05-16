@@ -149,6 +149,7 @@ export default function OnlineQuranClassesCanadaPage() {
               alt="Kids learning Quran online in Canada"
               fill
               className="object-cover"
+              unoptimized
             />
           </div>
         </div>
