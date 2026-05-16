@@ -7,7 +7,6 @@ type IndividualPackage = {
   daysPerWeek: string;
   usd: string;
   lessonsPerMonth: string;
-  cad?: string;
   aud: string;
   uk: string;
   europe: string;
@@ -23,10 +22,9 @@ const INDIVIDUAL_PACKAGES: Record<Duration, IndividualPackage[]> = {
       daysPerWeek: "1 Day / Week",
       usd: "USD $30",
       lessonsPerMonth: "4 Lessons Per Month",
-      cad: "CAD $42",
       aud: "AUD $30",
-      uk: "UK £23",
-      europe: "EUROPE €26",
+      uk: "UK £20",
+      europe: "EUROPE €20",
       cta: "Enroll Now",
     },
     {
@@ -124,7 +122,6 @@ function getPackagesByDuration(duration: Duration): IndividualPackage[] {
   return INDIVIDUAL_PACKAGES["30"].map((item) => ({
     ...item,
     usd: applyDoubleMinusTen(item.usd),
-    cad: item.cad ? applyDoubleMinusTen(item.cad) : undefined,
     aud: applyDoubleMinusTen(item.aud),
     uk: applyDoubleMinusTen(item.uk),
     europe: applyDoubleMinusTen(item.europe),
@@ -192,24 +189,9 @@ export function FeesIndividualPackagesSection({ duration }: FeesIndividualPackag
                 item.featured ? "border-secondary/35 text-primary-foreground" : "border-secondary/15 text-foreground/75"
               }`}
             >
-              {item.cad && (
-                <div className="flex items-center justify-between gap-4">
-                  <span className="font-medium">Canada</span>
-                  <span>{item.cad}</span>
-                </div>
-              )}
-              <div className="flex items-center justify-between gap-4">
-                <span className="font-medium">Australia</span>
-                <span>{item.aud}</span>
-              </div>
-              <div className="flex items-center justify-between gap-4">
-                <span className="font-medium">UK</span>
-                <span>{item.uk}</span>
-              </div>
-              <div className="flex items-center justify-between gap-4">
-                <span className="font-medium">Europe</span>
-                <span>{item.europe}</span>
-              </div>
+              <p>{item.aud}</p>
+              <p>{item.uk}</p>
+              <p>{item.europe}</p>
             </div>
 
             <Link

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2, MessageCircle } from "lucide-react";
+import { CheckCircle2, MessageCircle, ArrowRight } from "lucide-react";
 
 const faqs = [
   {
@@ -29,6 +29,15 @@ const faqs = [
     answer:
       "Yes. Classes are one-to-one and fully supervised. We make sure the environment is safe, respectful, and parents can track progress easily.",
   },
+];
+
+const benefits = [
+  "Qualified and experienced Quran teachers",
+  "Female teachers available for girls and kids",
+  "Regular progress updates for parents",
+  "Flexible class timings for families",
+  "Step-by-step structured learning plan",
+  "Friendly teaching style for kids",
 ];
 
 export const metadata: Metadata = {
@@ -131,7 +140,7 @@ export default function BestQuranClassesForKidsPage() {
           </p>
 
           <p className="mb-4 leading-relaxed text-foreground/85">
-            Online Quran classes are becoming very popular because they are flexible and easy for kids. Here we explain what to look for in a good class. If you are just starting out, you can also read our <Link href="/blog/how-to-learn-quran-online-for-beginners" className="font-semibold text-secondary underline-offset-4 hover:underline">beginner guide to learn Quran online</Link>.
+            Online Quran classes are becoming very popular because they are flexible and easy for kids. Here we explain what to look for in a good class.
           </p>
         </section>
 
@@ -242,10 +251,6 @@ export default function BestQuranClassesForKidsPage() {
 
           <p className="mb-6 text-foreground/85">
             Give your child the chance to learn Quran with a qualified and caring teacher.
-          </p>
-
-          <p className="mb-6 text-sm text-foreground/75">
-            For a step-by-step starting point, visit our <Link href="/blog/how-to-learn-quran-online-for-beginners" className="font-semibold text-secondary underline-offset-4 hover:underline">How to Learn Quran Online for Beginners</Link> article.
           </p>
 
           <a

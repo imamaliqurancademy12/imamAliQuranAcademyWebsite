@@ -42,7 +42,8 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h3 className="text-base font-bold tracking-wider text-[#FFD700] uppercase">About Us</h3>
             <p className="text-xs leading-relaxed opacity-90">
-Helping students learn the Quran and Islamic knowledge with proper guidance and care.            </p>
+              Illuminating the path of divine knowledge through traditional scholarly excellence.
+            </p>
           </div>
 
           {/* Column 2: Quick Links */}

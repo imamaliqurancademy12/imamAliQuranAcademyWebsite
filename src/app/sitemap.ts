@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/online-quran-classes-canada`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/online-quran-classes-australia`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/blog/best-online-quran-classes-for-kids`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE_URL}/blog/how-to-learn-quran-online-for-beginners`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.82 },
     { url: `${BASE_URL}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/teachers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/fees`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
