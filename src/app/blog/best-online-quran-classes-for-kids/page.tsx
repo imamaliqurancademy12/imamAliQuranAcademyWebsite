@@ -106,6 +106,7 @@ export default function BestQuranClassesForKidsPage() {
             height={400}
             className="w-full object-cover"
             sizes="(max-width: 768px) 100vw, 100vw"
+            unoptimized
           />
         </div>
 
