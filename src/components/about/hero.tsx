@@ -30,9 +30,8 @@ export function HeroHeader() {
         </h1>
 
         <p className="mt-7 max-w-2xl text-base leading-relaxed text-[#0B2C3D]/80 sm:text-lg md:text-xl">
-          Learn who we are, meet our teachers, and see how we help people learn
-          Quran online in a simple way.
-        </p>
+  <strong>Imam Ali Quran Academy</strong> is a trusted online <strong>Shia Quran Academy</strong> dedicated to providing authentic Quran education for students across the USA, UK, Canada, Australia, and around the world. Our qualified male and female tutors offer one-on-one <strong>online Quran classes</strong>, <strong>Quran with Tajweed</strong>, <strong>Nazra Quran</strong>, <strong>Hifz Quran</strong>, <strong>Islamic Studies</strong>, and the teachings of the <strong>Ahlul Bayt (AS)</strong>. Whether you are a child, beginner, or adult, our flexible online classes help you learn the Holy Quran with confidence, strengthen your Islamic knowledge, and build a lifelong connection with Allah through personalized and engaging lessons.
+</p>
       </div>
     </section>
   );
