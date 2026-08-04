@@ -4,18 +4,21 @@ import { ArrowRight, BookOpen, GraduationCap, Users, Star } from "lucide-react"
 
 const trustPoints = [
 	{
-		label: "Friendly teachers",
-		description: "Our teachers help you learn with care and patience.",
+		label: "Qualified Shia Teachers",
+		description:
+			"Learn from experienced male and female tutors following authentic Shia teachings.",
 		Icon: GraduationCap,
 	},
 	{
-		label: "Kids and adults",
-		description: "We teach children, adults, and new students.",
+		label: "One-on-One Live Classes",
+		description:
+			"Personalized online Quran lessons for children, adults, and beginners.",
 		Icon: Users,
 	},
 	{
-		label: "Easy for beginners",
-		description: "We start from the basics and move slowly.",
+		label: "Quran with Tajweed",
+		description:
+			"Master Quran recitation, Nazra, Hifz, and Islamic Studies step by step.",
 		Icon: BookOpen,
 	},
 ]
@@ -48,18 +51,29 @@ export function HeroBanner() {
 						))}
 					</div>
 					<p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
-						Trusted Quran Learning
+						Trusted Online Shia Quran Classes
 					</p>
 				</div>
 
-				<h1 className="mb-6 max-w-4xl text-4xl font-bold leading-[1.05] text-primary sm:text-5xl sm:leading-tight md:text-6xl lg:text-7xl">
-					Online Quran
-					<span className="ml-3 block italic text-secondary md:inline">Academy</span>
+				<h1 className="mb-6 max-w-5xl text-4xl font-bold leading-[1.05] text-primary sm:text-5xl sm:leading-tight md:text-6xl lg:text-7xl">
+   					 Online Shia Quran
+    				<span className="ml-3 block italic text-secondary md:inline">
+        			Academy
+    				</span>
 				</h1>
 
-				<p className="mb-8 max-w-2xl text-base leading-relaxed text-foreground/80 sm:text-lg md:mb-10 md:text-xl">
-					Learn Quran online with friendly teachers. Our live classes are for
-					kids, adults, and beginners. We help you read Quran step by step.
+				<p className="mb-8 max-w-3xl text-base leading-relaxed text-foreground/80 sm:text-lg md:mb-10 md:text-xl">
+				    <strong>Imam Ali Quran Academy</strong> is a trusted
+				    <strong> Shia Quran Academy</strong> providing one-on-one
+				    <strong> online Quran classes</strong> for children, adults,
+				    and beginners. Learn the Holy Quran with
+				    <strong> Tajweed</strong>, <strong>Nazra</strong>,
+				    <strong> Hifz</strong>, Islamic Studies, Duas, Nahjul Balagha,
+				    and the teachings of <strong>Ahlul Bayt (AS)</strong>.
+				    Our experienced male and female tutors proudly teach students
+				    in the <strong>USA</strong>, <strong>UK</strong>,
+				    <strong>Canada</strong>, <strong>Australia</strong>,
+				    and worldwide through flexible live classes.
 				</p>
 
 				<div className="mb-8 grid gap-3 sm:grid-cols-3 md:mb-10">
