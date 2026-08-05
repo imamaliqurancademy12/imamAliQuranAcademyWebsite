@@ -27,14 +27,13 @@ export function TeachersPreviewSection() {
 			<div className="mx-auto w-full max-w-7xl px-6 md:px-10">
 				<div className="mb-12 text-center md:mb-16">
 					<p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-						Our Teachers
+						QUALIFIED SHIA QURAN TEACHERS
 					</p>
 					<h2 className="text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
-						Meet Our Quran Teachers
+						Meet Our Certified Shia Quran Teachers
 					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-foreground/75 md:text-base">
-						Our teachers help kids, adults, and beginners learn in a simple and
-						friendly way.
+						At Imam Ali Quran Academy, our qualified male and female Shia Quran teachers provide one-on-one online classes for children, adults, and beginners. Learn Quran Reading, Noorani Qaida, Tajweed, Hifz, Islamic Studies, Duas, and Nahjul Balagha with patient tutors dedicated to authentic teachings of Ahlul Bayt (AS). We proudly teach students in the USA, UK, Canada, Australia, and worldwide.
 					</p>
 				</div>
 
