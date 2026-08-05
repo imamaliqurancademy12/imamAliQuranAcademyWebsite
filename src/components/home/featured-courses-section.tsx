@@ -10,15 +10,14 @@ export function FeaturedCoursesSection() {
 			<div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between">
 				<div>
 					<p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-						Online Quran Classes
+						ONLINE SHIA QURAN CLASSES
 					</p>
 					<h2 className="text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
-						Learn Quran Online, Step by Step
+						Learn the Holy Quran Online with Qualified Shia Teachers
 					</h2>
 				</div>
 				<p className="max-w-md text-sm leading-relaxed text-foreground/75 md:text-base">
-					Start with beginner classes, then move to Tajweed and Hifz at your own
-					pace.
+					Join Imam Ali Quran Academy for one-on-one online Quran classes with experienced Shia teachers. We teach Noorani Qaida, Quran Reading, Tajweed, Hifz, Islamic Studies, Nahjul Balagha, Duas, and the teachings of Ahlul Bayt (AS). Students from the USA, UK, Canada, Australia, and around the world learn through flexible live classes designed for children, adults, and beginners.
 				</p>
 			</div>
 
@@ -27,10 +26,10 @@ export function FeaturedCoursesSection() {
 					<div className="relative z-10 max-w-md">
 						<BookOpenText className="mb-5 h-10 w-10 text-secondary" />
 						<h3 className="mb-3 text-2xl font-semibold text-primary md:text-3xl">
-							Learn Quran Reading
+							Quran Reading with Noorani Qaida
 						</h3>
 						<p className="mb-7 text-sm leading-relaxed text-foreground/75 md:text-base">
-							Learn to read Quran with simple, live lessons.
+							Build a strong foundation with Noorani Qaida and learn accurate Quran reading through 			personalized one-on-one online classes.
 						</p>
 						<div className="flex items-center gap-3">
 							<div className="flex items-center gap-1 text-secondary">
@@ -49,10 +48,10 @@ export function FeaturedCoursesSection() {
 				<article className="rounded-xl border border-secondary/15 bg-accent/20 p-5 sm:p-7 shadow-sm md:col-span-4">
 					<Languages className="mb-5 h-9 w-9 text-secondary" />
 					<h3 className="mb-3 text-xl font-semibold text-primary">
-						Easy Tajweed
+						Quran with Tajweed
 					</h3>
 					<p className="mb-6 text-sm text-foreground/75">
-						Learn the rules that help you recite Quran correctly.
+						Master Makharij, pronunciation, and Tajweed rules with qualified Shia Quran tutors through live online lessons.
 					</p>
 					<div className="flex items-center gap-1 text-secondary">
 						{stars.map((star) => (
@@ -64,10 +63,10 @@ export function FeaturedCoursesSection() {
 				<article className="rounded-xl border border-secondary/15 bg-accent/20 p-5 sm:p-7 shadow-sm md:col-span-4">
 					<BookOpenText className="mb-5 h-9 w-9 text-secondary" />
 					<h3 className="mb-3 text-xl font-semibold text-primary">
-						Hifz Help
+						Online Hifz Program
 					</h3>
 					<p className="mb-6 text-sm text-foreground/75">
-						We help you remember and review what you learn.
+						Memorize the Holy Quran with experienced Shia Hifz teachers through personalized online lessons, regular revision, and step-by-step guidance.
 					</p>
 					<div className="flex items-center gap-1 text-secondary">
 						{stars.map((star) => (
@@ -79,18 +78,17 @@ export function FeaturedCoursesSection() {
 				<article className="flex flex-col overflow-hidden rounded-xl border border-primary/20 bg-primary shadow-sm md:col-span-8 md:flex-row">
 					<div className="flex flex-1 flex-col p-6 sm:p-8 md:p-10">
 						<h3 className="mb-4 text-3xl font-bold tracking-tight text-background" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-							Keep Learning With Us
+							Start Your Online Quran Journey Today
 						</h3>
 						<p className="mb-8 text-base leading-relaxed text-background/80 md:pr-6">
-							Choose lessons that fit your level, from the first lesson to more
-							advanced study.
+							Join Imam Ali Quran Academy and learn the Holy Quran with qualified Shia teachers through one-on-one live classes. We offer Quran Reading, Noorani Qaida, Tajweed, Hifz, Islamic Studies, Nahjul Balagha, and Duas for children, adults, and beginners in the USA, UK, Canada, Australia, and worldwide.
 						</p>
 						<div className="mt-auto pt-4">
 							<Link
 								href="/enroll"
 								className="inline-flex items-center justify-center rounded-full bg-[#C5A059] px-6 py-2.5 text-sm font-bold tracking-[0.12em] text-[#1A1A1A] shadow-sm transition-all hover:bg-[#d3b26b] hover:shadow-[0_0_15px_rgba(197,160,89,0.4)]"
 							>
-								ENROLL TODAY
+								BOOK A FREE TRIAL
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</div>
