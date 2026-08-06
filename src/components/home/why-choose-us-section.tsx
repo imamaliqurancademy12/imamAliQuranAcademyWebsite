@@ -3,18 +3,18 @@ import { BadgeCheck, Clock3, Users } from "lucide-react";
 
 const highlights = [
 	{
-		title: "Qualified Teachers",
-		description: "Our teachers know how to teach Quran in a clear way.",
+		title: "Certified Shia Quran Teachers",
+		description: "Learn from qualified male and female Shia Quran teachers with years of teaching experience in Quran, Tajweed, Hifz, and Islamic Studies..",
 		Icon: BadgeCheck,
 	},
 	{
-		title: "Flexible Classes",
-		description: "You can learn at a time that works for you.",
+		title: "Flexible One-on-One Live Classes",
+		description: "Choose class timings that fit your daily routine. Our personalized live Quran classes are available for students worldwide.",
 		Icon: Clock3,
 	},
 	{
-		title: "Students Everywhere",
-		description: "People from many places join our classes.",
+		title: "Students from Around the World",
+		description: "Families across the USA, UK, Canada, Australia, Europe, and many other countries trust Imam Ali Quran Academy for quality online Quran education.",
 		Icon: Users,
 	},
 ];
@@ -33,23 +33,22 @@ export function WhyChooseUsSection() {
 						/>
 					</div>
 					<div className="absolute -bottom-6 -right-4 hidden border border-secondary/30 bg-secondary px-8 py-6 text-primary md:block">
-						<p className="text-4xl font-bold leading-none">25+</p>
+						<p className="text-4xl font-bold leading-none">Worldwide</p>
 						<p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em]">
-							Years of Teaching
+							Online Learning
 						</p>
 					</div>
 				</div>
 
 				<div className="rounded-xl border border-secondary/15 bg-background/60 p-7 shadow-sm md:p-9">
 					<p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-						Why Students Choose Us
+						WHY CHOOSE IMAM ALI QURAN ACADEMY
 					</p>
 					<h2 className="mb-5 text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
-						A Simple Quran Learning Place
+						Learn Quran Online with Certified Shia Quran Teachers
 					</h2>
 					<p className="mb-9 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
-						We help families, beginners, and adults learn Quran online with
-						friendly teachers and easy lessons.
+						Imam Ali Quran Academy offers one-on-one online Quran classes with experienced Shia Quran teachers for kids, adults, sisters, and beginners. Learn Noorani Qaida, Quran Reading, Tajweed, Hifz, Islamic Studies, and Dua with flexible schedules, affordable fees, and live interactive lessons from anywhere in the world.
 					</p>
 
 					<div className="space-y-6">
