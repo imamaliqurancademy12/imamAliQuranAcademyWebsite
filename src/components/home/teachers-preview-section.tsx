@@ -2,24 +2,30 @@ import Image from "next/image";
 
 const teachers = [
 	{
-		name: "Dr. Ibrahim Al-Azhar",
-		role: "Quran Teacher",
-		quote: "I help students learn Quran with care and clear steps.",
+		name: "Qualified Male Quran Teacher",
+		role: "Quran & Tajweed Instructor",
+		quote: "Learn Quran reading, Tajweed, Nazra, memorization (Hifz), and daily Islamic teachings through personalized one-on-one online classes designed for students of every age and level..",
 		image: "/images/home/teacher-ibrahim.webp",
 	},
 	{
-		name: "Sheikh Mansoor Ali",
-		role: "Tajweed Teacher",
-		quote: "I teach Tajweed in a simple way so students can recite well.",
+		name: "Certified Shia Quran Teacher",
+		role: "Advanced Tajweed Teacherr",
+		quote: "Improve your Quran recitation with proper Makharij, Tajweed rules, and practical guidance. Our lessons help students recite the Holy Quran confidently and correctly.",
 		image: "/images/home/teacher-monsoor.webp",
 	},
 	{
-		name: "Ustadha Fatima Zahra",
-		role: "Hifz Teacher",
-		quote: "I support students who want to remember the Quran.",
+		name: "Qualified Female Quran Teacher",
+		role: "Ladies & Kids Quran Teacherr",
+		quote: "Female students and children can learn in a comfortable and respectful environment with experienced female Quran teachers offering live online classes and flexible schedules.",
 		image: "/images/home/teacher-fatima.webp",
 	},
 ];
+
+<div className="mt-12 text-center max-w-4xl mx-auto">
+  <p className="text-lg leading-8 text-foreground/80">
+    At Imam Ali Quran Academy, our dedicated online Quran teachers are committed to helping students of all ages learn Quran with Tajweed, Hifz, Islamic Studies, Duas, and daily prayers through live one-on-one classes. Whether you are a beginner or an advanced learner, our personalized teaching approach makes learning simple, effective, and enjoyable.
+  </p>
+</div>
 
 export function TeachersPreviewSection() {
 	return (
