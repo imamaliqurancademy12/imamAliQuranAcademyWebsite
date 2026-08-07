@@ -22,17 +22,16 @@ export function CoursesHeroSection() {
 
       <div className="mx-auto w-full max-w-7xl">
         <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
-          Quran Courses
+          SHIA QURAN COURSES
         </span>
 
         <h1 className="max-w-4xl text-4xl font-bold leading-[1.02] text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-          Online Quran Classes for
-          <span className="block italic text-secondary">Kids and Beginners</span>
+          Online Shia Quran Classes for 
+          <span className="block italic text-secondary">Kids, Adults & Beginners</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
-          Pick a class that fits your level. Learn Tajweed online, join online
-          Hifz classes, and improve your Quran reading step by step.
+          Learn the Quran online with experienced Shia Quran teachers through live, one-to-one classes. Study Quran reading, Tajweed, Hifz, Islamic Studies, and other essential Quran courses at your own pace..
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
