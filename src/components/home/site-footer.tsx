@@ -85,9 +85,7 @@ export function SiteFooter() {
           {/* Column 4: Newsletter */}
           <div className="space-y-4">
             <h3 className="text-base font-bold tracking-wider text-[#FFD700] uppercase">Newsletter</h3>
-            <p className="text-xs opacity-90">STAY CONNECTED
-
-Receive Quran learning tips, course updates, and academy news.</p>
+            <p className="text-xs opacity-90">STAY CONNECTED: <br /> Receive Quran learning tips, course updates, and academy news.</p>
             <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
               <div className="relative">
                 <input
