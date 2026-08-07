@@ -9,9 +9,9 @@ export function SearchSection() {
 			<div className="mx-auto w-full max-w-7xl">
 				<div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
 					<div className="space-y-2">
-						<h2 className="font-heading text-3xl leading-tight text-primary sm:text-4xl">Find Your Course</h2>
+						<h2 className="font-heading text-3xl leading-tight text-primary sm:text-4xl">Choose the Right Online Quran Course</h2>
 						<p className="text-sm text-foreground/70">
-							Choose online Quran classes for kids, beginners, Tajweed, or Hifz.
+							Explore online Shia Quran classes for kids, adults, and beginners. Learn Quran reading, Tajweed, Hifz, and Islamic Studies through live lessons with qualified teachers.
 						</p>
 					</div>
 
