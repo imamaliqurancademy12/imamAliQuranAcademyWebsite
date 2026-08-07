@@ -42,7 +42,7 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h3 className="text-base font-bold tracking-wider text-[#FFD700] uppercase">About Us</h3>
             <p className="text-xs leading-relaxed opacity-90">
-              Illuminating the path of divine knowledge through traditional scholarly excellence.
+              Imam Ali Quran Academy provides online Quran classes for kids, adults, beginners, and families worldwide. Learn Quran reading, Noorani Qaida, Tajweed, Hifz, Islamic Studies, and Duas through live one-on-one lessons with qualified Shia Quran teachers.
             </p>
           </div>
 
@@ -85,7 +85,9 @@ export function SiteFooter() {
           {/* Column 4: Newsletter */}
           <div className="space-y-4">
             <h3 className="text-base font-bold tracking-wider text-[#FFD700] uppercase">Newsletter</h3>
-            <p className="text-xs opacity-90">Subscribe for updates</p>
+            <p className="text-xs opacity-90">STAY CONNECTED
+
+Receive Quran learning tips, course updates, and academy news.</p>
             <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
               <div className="relative">
                 <input
