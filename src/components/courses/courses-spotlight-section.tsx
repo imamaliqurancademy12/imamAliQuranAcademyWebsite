@@ -32,7 +32,7 @@ export function CoursesSpotlightSection() {
           </p>
 
           <h2 className="font-heading text-4xl leading-tight text-primary md:text-5xl">
-            Learn Online with <span className="italic text-secondary">Simple Guidance</span>
+            Learn Quran Online with <span className="italic text-secondary"> Shia Teachers</span>
           </h2>
 
           <div className="space-y-7 pt-2">
@@ -43,7 +43,7 @@ export function CoursesSpotlightSection() {
               <div>
                 <h3 className="mb-1 font-heading text-xl text-primary">Clear Study Plan</h3>
                 <p className="text-sm leading-relaxed text-primary/70 md:text-base">
-                  We give you clear lessons from beginner level to advanced level.
+                  Follow a structured learning plan designed for beginners, children, and advanced students.
                 </p>
               </div>
             </article>
@@ -55,7 +55,19 @@ export function CoursesSpotlightSection() {
               <div>
                 <h3 className="mb-1 font-heading text-xl text-primary">Teacher Feedback</h3>
                 <p className="text-sm leading-relaxed text-primary/70 md:text-base">
-                  Your teacher checks your recitation and helps you improve every week.
+                  Receive regular feedback from experienced Shia Quran teachers to improve your Quran reading and recitation.
+                </p>
+              </div>
+            </article>
+
+            <article className="flex gap-4">
+              <div className="flex h-10 w-22 shrink-0 items-center justify-center rounded-lg bg-primary text-secondary">
+                <PenTool className="h-7 w-10" />
+              </div>
+              <div>
+                <h3 className="mb-1 font-heading text-xl text-primary">Shia Islamic Learning</h3>
+                <p className="text-sm leading-relaxed text-primary/70 md:text-base">
+                  Learn Quran, Tajweed, Islamic studies, Fiqh, and other subjects according to Shia Islamic teachings.
                 </p>
               </div>
             </article>
