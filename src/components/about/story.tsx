@@ -10,9 +10,10 @@ export function StorySection() {
             <i className="font-normal text-[#775a22]">Imam Ali Online Quran Academy</i>
           </h2>
           <p className="mb-0 text-base leading-relaxed text-[#00334D]/70 md:mb-0 md:text-lg">
-            Imam Ali Online Quran Academy started with a simple goal: make Quran
-            learning easy for people at home. We believe distance should not stop
-            anyone from learning the Quran.
+            Imam Ali Online Quran Academy was created with a simple goal: to make authentic Quran learning accessible to students and families wherever they live. We believe distance should never be a barrier to learning the Holy Quran.</p>
+            
+  <p className="mb-0 text-base leading-relaxed text-[#00334D]/70 md:mb-0 md:text-lg">
+Our online classes combine clear teaching, personal attention, and flexible learning with a strong connection to the Quran and the teachings of the Ahlul Bayt (AS). From basic Quran reading to Tajweed, Hifz, Islamic Studies, and daily duas, we help students progress step by step in a comfortable online environment.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 md:mt-20 md:grid-cols-2">
@@ -28,8 +29,7 @@ export function StorySection() {
       <div>
         <h3 className="mb-2 text-lg font-bold text-[#f2ecff]">Simple online learning</h3>
         <p className="text-sm text-[#ddd2ff]/90">
-          We use live online classes and simple lessons so students can learn with
-          ease and stay connected to Quran learning.
+We use live one-on-one online classes and clear lessons so students can learn comfortably, ask questions, and stay connected to their Quran learning journey.
         </p>
       </div>
     </div>
@@ -47,7 +47,7 @@ export function StorySection() {
       <div>
         <h3 className="mb-2 text-lg font-bold text-[#d9fff1]">How we teach</h3>
         <p className="text-sm text-[#cbf7e8]/90">
-          We keep lessons calm, clear, and easy to follow.
+          We keep lessons clear, patient, and easy to follow. Each student receives guidance according to their level, helping them improve their Quran reading, recitation, and understanding step by step..
         </p>
       </div>
     </div>
@@ -65,7 +65,7 @@ export function StorySection() {
       <div>
         <h3 className="mb-2 text-lg font-bold text-[#7a4700]">Students from many places</h3>
         <p className="text-sm text-[#855425]/90">
-          People from different countries can join our Quran classes online.
+          We welcome students and families from different countries and time zones through flexible online Quran classes designed for learning from home.
         </p>
       </div>
     </div>
@@ -73,8 +73,7 @@ export function StorySection() {
 </div>
 
           <p className="mt-6 text-sm leading-relaxed text-[#00334D]/65 md:text-base">
-            Female Quran teacher support is available for sisters and children who
-            feel more comfortable learning with a female tutor.
+            Female Quran teachers are available for sisters and children who prefer learning with a female tutor, providing a comfortable and supportive learning environment.
           </p>
         </div>
 
