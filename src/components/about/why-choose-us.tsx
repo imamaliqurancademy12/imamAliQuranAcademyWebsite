@@ -4,23 +4,23 @@ import { GraduationCap, ShieldCheck, Globe, Star } from "lucide-react";
 const features = [
   {
     icon: GraduationCap,
-    title: "Qualified Teachers",
-    description: "Learn from teachers who know Quran teaching well.",
+    title: "Qualified Quran Teachers",
+    description: "Learn from dedicated male and female teachers who provide patient, personalized guidance in Quran reading, Tajweed, and Islamic education.",
   },
   {
     icon: ShieldCheck,
-    title: "Clear Lessons",
-    description: "Our lessons are simple and easy to follow.",
+    title: "Shia Islamic Learning",
+    description: "Learn the Quran alongside Islamic subjects connected to the teachings of the Ahlul Bayt (AS), including Duas, Nahjul Balagha, Sahifa Sajjadiya, and Islamic Fiqh",
   },
   {
     icon: Globe,
-    title: "Online Anywhere",
-    description: "Join classes from home, no matter where you live.",
+    title: "Online Learning Anywhere",
+    description: "Join live Quran and Islamic classes from the comfort of home, with flexible online learning for students and families around the world.",
   },
   {
     icon: Star,
-    title: "Trusted Support",
-    description: "We guide students with care and respect.",
+    title: "Personalized Support",
+    description: "Receive individual attention, regular feedback, and friendly guidance throughout your Quran learning journey.",
   },
 ];
 
