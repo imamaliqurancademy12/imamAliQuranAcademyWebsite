@@ -12,8 +12,7 @@ export function MissionVision() {
             </h2>
             <div className="h-1 w-16 rounded-full bg-[#B8965A]/40" />
             <p className="text-lg leading-loose text-[#5F7A8A] md:text-xl">
-                To make Quran learning simple, friendly, and easy to access for
-                students everywhere.
+                To make authentic Quran and Shia Islamic education simple, accessible, and meaningful for students everywhere, while helping learners develop a strong connection with the Holy Quran and the teachings of the Ahlul Bayt (AS).
             </p>
           </div>
 
@@ -24,8 +23,7 @@ export function MissionVision() {
             </h2>
             <div className="h-1 w-16 rounded-full bg-[#B8965A]/40" />
             <p className="text-lg leading-loose text-[#5F7A8A] md:text-xl">
-                To help more people learn Quran online with confidence and grow in
-                good character.
+                To help Shia Muslim students around the world learn the Quran with confidence, strengthen their Islamic knowledge, and grow in faith, character, and understanding through the guidance of the Quran and Ahlul Bayt (AS).
             </p>
           </div>
         </div>
