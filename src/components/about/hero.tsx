@@ -30,11 +30,11 @@ export function HeroHeader() {
         </h1>
 
         <p className="mt-7 max-w-2xl text-base leading-relaxed text-[#0B2C3D]/80 sm:text-lg md:text-xl">
-  <strong>Imam Ali Quran Academy is a trusted online Shia Quran academy </strong>dedicated to helping children, beginners, and adults learn the Holy Quran from the comfort of their homes. We provide one-on-one online Quran classes with qualified male and female tutors, with lessons tailored to each student's level and learning needs.\\n
+ <p> <strong>Imam Ali Quran Academy is a trusted online Shia Quran academy </strong>dedicated to helping children, beginners, and adults learn the Holy Quran from the comfort of their homes. We provide one-on-one online Quran classes with qualified male and female tutors, with lessons tailored to each student's level and learning needs.</p>
 
-Our courses include <strong> Quran reading, Quran with Tajweed, Nazra Quran, Hifz Quran, Islamic Studies, Arabic language, Duas and Adhkar </strong>, along with teachings and guidance from the <strong> Ahlul Bayt (AS) </strong>. We aim to make Quran learning simple, engaging, and accessible for students in the USA, UK, Canada, Australia, and around the world.\\n
+ <p>Our courses include <strong> Quran reading, Quran with Tajweed, Nazra Quran, Hifz Quran, Islamic Studies, Arabic language, Duas and Adhkar </strong>, along with teachings and guidance from the <strong> Ahlul Bayt (AS) </strong>. We aim to make Quran learning simple, engaging, and accessible for students in the USA, UK, Canada, Australia, and around the world.</p>
 
-Whether you are beginning your Quran journey or looking to improve your recitation and Islamic knowledge, our personalized online classes provide a supportive environment to learn with confidence and build a lasting connection with the Quran and the teachings of Islam.
+ <p>Whether you are beginning your Quran journey or looking to improve your recitation and Islamic knowledge, our personalized online classes provide a supportive environment to learn with confidence and build a lasting connection with the Quran and the teachings of Islam.</p>
 </p>
       </div>
     </section>
