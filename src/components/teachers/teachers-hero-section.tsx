@@ -28,11 +28,19 @@ export function TeachersHeroSection() {
         <h1 className="max-w-4xl text-left text-4xl font-bold leading-[1.02] text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           OUR <span className="italic text-secondary">TEACHERS</span>
         </h1>
+        <h2>Learn from Dedicated Shia Quran Teachers</h2>
 
         <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
-          Meet our Quran tutor online team, including a female Quran teacher.
-          Learn about each teacher's profile, experience, and teaching style.
-        </p>
+          Choosing the right Quran teacher can make a meaningful difference in a student's learning journey. Our teacher profiles provide information about each tutor's qualifications, experience, teaching approach, and areas of expertise.
+        </p> <br> <br>
+
+          <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
+          COur Shia Quran teachers are committed to helping students develop accurate Quran reading, better Tajweed, Islamic understanding, and a stronger connection with the teachings of the Holy Quran and Ahlul Bayt (AS).
+        </p> <br> <br>
+
+          <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
+          Whether you are looking for a Shia Quran tutor online, a female Quran teacher for sisters and children, or an experienced teacher for advanced Quran studies, you can find a suitable learning option through our academy.
+        </p> 
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
