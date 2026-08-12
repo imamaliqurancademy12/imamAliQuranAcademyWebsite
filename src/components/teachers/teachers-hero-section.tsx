@@ -35,7 +35,7 @@ export function TeachersHeroSection() {
         </p> <br> <br>
 
           <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
-          COur Shia Quran teachers are committed to helping students develop accurate Quran reading, better Tajweed, Islamic understanding, and a stronger connection with the teachings of the Holy Quran and Ahlul Bayt (AS).
+          Our Shia Quran teachers are committed to helping students develop accurate Quran reading, better Tajweed, Islamic understanding, and a stronger connection with the teachings of the Holy Quran and Ahlul Bayt (AS).
         </p> <br> <br>
 
           <p className="mt-7 max-w-2xl text-left text-base leading-relaxed text-foreground/80 sm:text-lg md:text-xl">
